@@ -4,6 +4,8 @@ body {
 
 h1 {
   color: antiquewhite;
+  font-family: 'Bangers', cursive;
+  font-size: 3em;
   position: fixed;
   top: 10%;
   left: 50%;
@@ -103,4 +105,10 @@ ul {
 @keyframes raiseopacity {
   from { opacity: .3; }
   to { opacity: 1; }
+}
+
+a {
+  font-family: 'Bangers', cursive;
+  color: #229ad6;
+  font-size: 2em;
 }
