@@ -1,0 +1,66 @@
+@use 'base';
+
+#home {
+  height: 100vh;
+  width: 100%;
+
+  .overlay {
+    background-color: rgba($color--black, 0.9);
+
+    position: absolute;
+    text-align: center;
+
+    height: 100%;
+    width: 100%;
+  }
+  
+  img {
+    height: 100%;
+    width: 100%;
+  }
+
+  h1 {
+    color: $color--white;
+    font-weight: 700;
+    text-shadow: 0.125em 0.125em 0.125em $color--black; 
+    text-transform: uppercase;
+
+    margin-top: 30vh;
+  }
+}
+
+#work, 
+#about, 
+#contact {
+  margin-top: 10em;
+  padding-top: 3em; 
+
+  height: 75vh;
+  width: 100%;
+
+  div {
+    height: 75vh;
+    width: 100%;
+  }
+
+  h2 {
+    text-shadow: 0.125em 0.125em 0.125em rgba($color--black, 0.2); 
+  }
+
+  .content {
+    border-color: $color--two;
+    border-style: solid;
+    border-width: 0.5em 0;
+  }
+}
+
+#work {
+  .content {
+    padding-top: 5em;
+  }
+
+  img {
+    height: 60%;
+    width: 30%;
+  }
+}
