@@ -1,0 +1,89 @@
+a,
+p {
+  font-size: 1.125em;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 2.188em;
+  font-weight: 700;
+}
+
+nav {
+  color: #FFFFFF;
+  position: fixed;
+  box-shadow: 0 0.25em 0.125em rgba(0, 0, 0, 0.2);
+  padding: 0.5em 1em;
+  width: 100%;
+  z-index: 1;
+}
+nav a {
+  color: #FFFFFF;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  margin-left: 1em;
+}
+
+#home {
+  height: 100vh;
+  width: 100%;
+}
+#home .overlay {
+  background-color: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+#home .overlay p:hover {
+  color: rgba(240, 217, 185, 0.3);
+  display: inline-block;
+}
+#home img {
+  height: 100%;
+  width: 100%;
+}
+#home h1 {
+  color: #FFFFFF;
+  font-weight: 700;
+  text-shadow: 0.05em 0.05em 0.1em #F0D9B9;
+  text-transform: uppercase;
+  margin-top: 30vh;
+}
+
+#work h2,
+#about h2,
+#contact h2 {
+  text-shadow: 0.125em 0.125em 0.125em rgba(0, 0, 0, 0.2);
+}
+#work nav,
+#about nav,
+#contact nav {
+  color: #000000;
+}
+#work nav a,
+#about nav a,
+#contact nav a {
+  color: #000000;
+}
+
+#work img {
+  height: 60%;
+  width: 30%;
+}
+
+#contact a {
+  color: #44544D;
+}
+#contact a:hover {
+  color: #322536;
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=style.css.map */
