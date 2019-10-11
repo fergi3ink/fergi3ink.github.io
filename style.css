@@ -13,37 +13,25 @@ h2 {
 }
 
 nav {
-  color: #FFFFFF;
-  position: fixed;
-  box-shadow: 0 0.25em 0.125em rgba(0, 0, 0, 0.2);
+  background-color: #FFFFFF;
+  color: #000000;
   padding: 0.5em 1em;
   width: 100%;
   z-index: 1;
 }
-nav a {
-  color: #FFFFFF;
+nav a,
+nav span {
+  color: #000000;
+  font-size: 2.188em;
 }
-nav ul {
-  list-style: none;
-}
-nav ul li {
-  margin-left: 1em;
+
+.site-wrapper {
+  height: 100vh;
 }
 
 #home {
-  height: 100vh;
   width: 100%;
-}
-#home .overlay {
-  background-color: rgba(0, 0, 0, 0.9);
-  position: absolute;
-  text-align: center;
-  height: 100%;
-  width: 100%;
-}
-#home .overlay p:hover {
-  color: rgba(240, 217, 185, 0.3);
-  display: inline-block;
+  padding: 0 5em;
 }
 #home img {
   height: 100%;

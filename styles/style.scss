@@ -1,25 +1,14 @@
 @import 'base';
 
-#home {
+.site-wrapper {
   height: 100vh;
+}
+
+#home {
   width: 100%;
-
-  .overlay {
-    background-color: rgba($color--black, 0.9);
-
-    position: absolute;
-    text-align: center;
-
-    height: 100%;
-    width: 100%;
-
-    p:hover {
-      color: rgba($color--three, 0.3);
-      display: inline-block;
-    }
-  }
+  padding: 0 5em;
   
-  img {
+  img { 
     height: 100%;
     width: 100%;
   }
