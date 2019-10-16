@@ -2,6 +2,7 @@ p {
   font-size: 1.125em;
 }
 
+a,
 a:link {
   text-decoration: none;
 }
@@ -22,11 +23,14 @@ nav {
   width: 100%;
 }
 nav svg {
-  fill: #113A83;
+  background-color: #113A83;
+  fill: #FFFFFF;
+  padding: 0 0.5em;
   height: 4.25em;
   width: 3em;
 }
 nav .links {
+  display: none;
   margin-right: 2em;
   padding-top: 1em;
 }
@@ -59,6 +63,7 @@ nav .links a {
   color: #113A83;
   display: inline-block;
   padding: 5em 2em 0;
+  margin-bottom: 5em;
 }
 #home .welcome-content h1,
 #home .welcome-content h2 {
@@ -66,6 +71,35 @@ nav .links a {
   font-weight: 700;
   text-shadow: 0.05em 0.05em 0.1em #113A83;
   text-transform: uppercase;
+}
+#home .welcome-content a {
+  color: #FFFFFF;
+}
+#home #down-arrow {
+  display: none;
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+#home #down-arrow a {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 2em;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+#work img {
+  height: 60%;
+  width: 30%;
 }
 
 /*# sourceMappingURL=style.css.map */

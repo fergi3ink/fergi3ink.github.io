@@ -16,6 +16,7 @@ p {
   font-size: $font-size--base;
 }
 
+a, 
 a:link {
   text-decoration: none;
 }
@@ -37,13 +38,16 @@ nav {
   width: 100%;
 
   svg {
-    fill: $color--three;
+    background-color: $color--three;
+    fill: $color--white;
     
+    padding: 0 .5em;
     height: 4.25em;
     width: 3em;
   }
 
   .links {
+    display: none;
     margin-right: 2em;
     padding-top: 1em;
 
