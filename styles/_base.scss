@@ -1,18 +1,17 @@
-$font--heading: sans-serif;
-$font--main:    serif;
+$font--heading: 'Roboto', sans-serif;
+$font--main:    'Open Sans', sans-serif;
 
 $font-size--xlarge:  3.75em;
-$font-size--large:   2.188em;
+$font-size--large:   3em;
 $font-size--base:    1.125em; 
 
-$color--one:    #44544D;
-$color--two:    #322536;
-$color--three:  #F0D9B9;
+$color--one:    #F5D547;
+$color--two:    #ABABAB;
+$color--three:  #113A83;
+$color--four:   #B4B4BA;
 $color--black:  #000000;
 $color--white:  #FFFFFF;
 
-
-a, 
 p {
   font-size: $font-size--base;
 }
@@ -21,25 +20,40 @@ a:link {
   text-decoration: none;
 }
 
+h1 {
+  font-size: $font-size--xlarge;
+}
+
 h2 {
   font-size: $font-size--large;
   font-weight: 700; 
 }
 
 nav {
-  background-color: $color--white;
-  color: $color--black;
+  background-color: $color--one;
+  color: $color--three;
 
-  // position: fixed;
-
-  // box-shadow: 0 0.25em 0.125em rgba($color--black, 0.2);
-  padding: 0.5em 1em;
+  padding: 0 1em;
   width: 100%;
-  z-index: 1;
 
-  a, 
-  span {
-    color: $color--black;
-    font-size: $font-size--large;
+  svg {
+    fill: $color--three;
+    
+    height: 4.25em;
+    width: 3em;
   }
+
+  .links {
+    margin-right: 2em;
+    padding-top: 1em;
+
+    a {
+      color: $color--three;
+      font-size: $font-size--base;
+      font-family: $font--main;
+
+      margin-right: .25em;
+    }
+  }
+
 }
