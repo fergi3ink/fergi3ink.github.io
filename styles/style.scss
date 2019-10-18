@@ -4,13 +4,13 @@
   background: $color--two url("https://images.unsplash.com/photo-1502252430442-aac78f397426?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80") no-repeat;
   background-size: cover;
 
-  height: 90vh;
+  padding-top: 4em;
+  height: 100vh;
   width: 100%;
-  
+
   .image-gradient {
     background-image: linear-gradient(rgba($color--four, .8), rgba($color--three, .5));
 
-    text-align: center;
     height: 100%;
     width: 100%;
     
@@ -30,12 +30,19 @@
     padding: 5em 2em 0;
     margin-bottom: 5em;
 
+    h1 {
+      color: $color--white;
+    }
+
+    h2 {
+      color: $color--three; 
+    }
+
     h1,
     h2 {
       font-family: $font--heading;
-      font-weight: 700;
-      text-shadow: 0.05em 0.05em 0.1em $color--three; 
       text-transform: uppercase;
+      text-shadow: 0 0.1em 0.1em rgba($color--black, 0.5);
     }
 
     a {
@@ -68,26 +75,19 @@
   }
 }
 
-// #work, 
-// #about, 
-// #contact {
-//   h2 {
-//     text-shadow: 0.125em 0.125em 0.125em rgba($color--black, 0.2); 
-//   }
-
-//   nav {
-//     color: $color--black;
-  
-//     a {
-//       color: $color--black;
-//     }
-//   }
-// }
-
 #work {
+  display: none;
+  height: 100vh;
+  background-color: $color--two;
+  h2 {
+    padding-top: 2em;
+  }
   img {
-    height: 60%;
     width: 30%;
+  }
+
+  img:nth-child(2) {
+    margin: 0 2%;
   }
 }
 

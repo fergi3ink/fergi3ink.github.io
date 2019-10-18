@@ -23,9 +23,11 @@ a:link {
 
 h1 {
   font-size: $font-size--xlarge;
+  font-weight: 700;
 }
 
 h2 {
+  color: $color--three;
   font-size: $font-size--large;
   font-weight: 700; 
 }
@@ -35,7 +37,9 @@ nav {
   color: $color--three;
 
   padding: 0 1em;
+  position: fixed;
   width: 100%;
+  z-index: 5;
 
   svg {
     background-color: $color--three;
