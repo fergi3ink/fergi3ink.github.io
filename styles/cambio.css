@@ -1,0 +1,55 @@
+p {
+  font-size: 1.125em;
+}
+
+a,
+a:link {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 3.75em;
+  font-weight: 700;
+}
+
+h2 {
+  color: #113A83;
+  font-size: 3em;
+  font-weight: 700;
+}
+
+nav {
+  background-color: #F5D547;
+  color: #113A83;
+  padding: 0 2em;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+}
+nav svg {
+  background-color: #113A83;
+  fill: #FFFFFF;
+  padding: 0.5em;
+  height: 4.25em;
+  width: 3.5em;
+}
+nav .links ul {
+  list-style: none;
+}
+nav .links li:nth-child(2) {
+  margin: 0 1em;
+}
+nav .links a {
+  color: #113A83;
+  font-size: 1.125em;
+  font-family: "Open Sans", sans-serif;
+  margin-right: 0.25em;
+}
+
+#footer {
+  background-color: #F5D547;
+  color: #113A83;
+  padding: 3em;
+}
+
+/*# sourceMappingURL=cambio.css.map */
