@@ -42,7 +42,7 @@ h2 {
   font-weight: 700; 
 }
 
-svg {
+svg.logo {
   background-color: $color--three;
   fill: $color--white;
   
@@ -84,4 +84,16 @@ nav {
   color: $color--three;
 
   padding: 0 $space--base;
+
+  .social {
+    list-style-type: none;
+    width: $font-size--small;
+   
+    svg {
+      color: $color--three;
+      width: $font-size--base;
+    }
+  }
+
+  
 }

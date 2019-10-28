@@ -18,7 +18,7 @@ h2 {
   font-weight: 700;
 }
 
-svg {
+svg.logo {
   background-color: #113A83;
   fill: #FFFFFF;
   padding: 0.5em;
@@ -51,6 +51,14 @@ nav .links a {
   background-color: #F5D547;
   color: #113A83;
   padding: 0 2em;
+}
+#footer .social {
+  list-style-type: none;
+  width: 0.5em;
+}
+#footer .social svg {
+  color: #113A83;
+  width: 1.125em;
 }
 
 body {
