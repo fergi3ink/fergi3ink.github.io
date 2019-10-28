@@ -18,6 +18,14 @@ h2 {
   font-weight: 700;
 }
 
+svg {
+  background-color: #113A83;
+  fill: #FFFFFF;
+  padding: 0.5em;
+  height: 4.25em;
+  width: 3.5em;
+}
+
 nav {
   background-color: #F5D547;
   color: #113A83;
@@ -25,13 +33,6 @@ nav {
   position: fixed;
   width: 100%;
   z-index: 5;
-}
-nav svg {
-  background-color: #113A83;
-  fill: #FFFFFF;
-  padding: 0.5em;
-  height: 4.25em;
-  width: 3.5em;
 }
 nav .links ul {
   list-style: none;
@@ -49,7 +50,7 @@ nav .links a {
 #footer {
   background-color: #F5D547;
   color: #113A83;
-  padding: 3em;
+  padding: 0 2em;
 }
 
 body {

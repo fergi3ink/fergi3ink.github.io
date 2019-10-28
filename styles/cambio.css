@@ -18,6 +18,14 @@ h2 {
   font-weight: 700;
 }
 
+svg {
+  background-color: #113A83;
+  fill: #FFFFFF;
+  padding: 0.5em;
+  height: 4.25em;
+  width: 3.5em;
+}
+
 nav {
   background-color: #F5D547;
   color: #113A83;
@@ -25,13 +33,6 @@ nav {
   position: fixed;
   width: 100%;
   z-index: 5;
-}
-nav svg {
-  background-color: #113A83;
-  fill: #FFFFFF;
-  padding: 0.5em;
-  height: 4.25em;
-  width: 3.5em;
 }
 nav .links ul {
   list-style: none;
@@ -49,7 +50,48 @@ nav .links a {
 #footer {
   background-color: #F5D547;
   color: #113A83;
-  padding: 3em;
+  padding: 0 2em;
+}
+
+.cambio-content {
+  padding-top: 4em;
+}
+.cambio-content > div {
+  border-bottom: 0.25em solid #F5D547;
+  padding: 2em;
+  text-align: center;
+}
+.cambio-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#intro div {
+  padding: 2em;
+}
+#intro img {
+  width: 25%;
+}
+
+#challenge {
+  background-color: #F5D547;
+}
+
+#research ul {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+#design-principles div div {
+  width: 25%;
+}
+
+#results img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*# sourceMappingURL=cambio.css.map */

@@ -42,6 +42,15 @@ h2 {
   font-weight: 700; 
 }
 
+svg {
+  background-color: $color--three;
+  fill: $color--white;
+  
+  padding: $space--small;
+  height: 4.25em;
+  width: 3.5em;
+}
+
 nav {
   background-color: $color--one;
   color: $color--three;
@@ -50,15 +59,6 @@ nav {
   position: fixed;
   width: 100%;
   z-index: 5;
-
-  svg {
-    background-color: $color--three;
-    fill: $color--white;
-    
-    padding: $space--small;
-    height: 4.25em;
-    width: 3.5em;
-  }
 
   .links {
     ul {
@@ -83,5 +83,5 @@ nav {
   background-color: $color--one;
   color: $color--three;
 
-  padding: 3em;
+  padding: 0 $space--base;
 }
