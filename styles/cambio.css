@@ -18,7 +18,7 @@ h2 {
   font-weight: 700;
 }
 
-svg {
+svg.logo {
   background-color: #113A83;
   fill: #FFFFFF;
   padding: 0.5em;
@@ -43,7 +43,7 @@ nav .links li:nth-child(2) {
 nav .links a {
   color: #113A83;
   font-size: 1.125em;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   margin-right: 0.25em;
 }
 
@@ -52,9 +52,24 @@ nav .links a {
   color: #113A83;
   padding: 0 2em;
 }
+#footer .social {
+  list-style-type: none;
+  width: 0.5em;
+}
+#footer .social svg {
+  color: #113A83;
+  width: 1.125em;
+}
 
 .cambio-content {
   padding-top: 4em;
+}
+.cambio-content h1 {
+  font-family: "Roboto", sans-serif;
+}
+.cambio-content h1,
+.cambio-content h3 {
+  color: #113A83;
 }
 .cambio-content > div {
   border-bottom: 0.25em solid #F5D547;

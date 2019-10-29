@@ -43,7 +43,7 @@ nav .links li:nth-child(2) {
 nav .links a {
   color: #113A83;
   font-size: 1.125em;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   margin-right: 0.25em;
 }
 
@@ -85,18 +85,18 @@ body {
   color: #FFFFFF;
   display: inline-block;
   padding: 5em 2em 0;
-  margin-bottom: 5em;
+  margin-bottom: 4em;
 }
 #home .welcome-content h1,
 #home .welcome-content h2 {
   color: #FFFFFF;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
   text-shadow: 0 0.1em 0.1em rgba(0, 0, 0, 0.5);
 }
-#home .welcome-content a {
-  color: #FFFFFF;
-  text-decoration: underline;
+#home .welcome-content svg {
+  width: 1em;
+  fill: #FFFFFF;
 }
 #home #down-arrow {
   -moz-animation: bounce 2s infinite;
@@ -126,9 +126,8 @@ body {
 }
 
 #work {
-  background-color: #113A83;
-  color: #FFFFFF;
-  border-top: 0.5em solid #FFFFFF;
+  background-color: #FFFFFF;
+  color: #113A83;
   height: 100vh;
   padding: 2em;
 }
@@ -136,7 +135,7 @@ body {
   padding-top: 4em;
 }
 #work h2 {
-  color: #FFFFFF;
+  color: #113A83;
   margin-bottom: 1em;
 }
 #work .project {
@@ -157,7 +156,7 @@ body {
   font-size: 0.75em;
 }
 #work .project a {
-  color: #FFFFFF;
+  color: #113A83;
   text-decoration: underline;
 }
 #work .project:first-child p a:hover span::before {
@@ -168,12 +167,13 @@ body {
   background-color: #F3FBF5;
   border-bottom: 0.5em solid #113A83;
   padding: 2em;
+  padding-top: 5em;
 }
 #about p {
-  width: 50%;
+  width: 75%;
 }
 #about img {
-  width: 40%;
+  width: 30%;
 }
 
 /*# sourceMappingURL=style.css.map */

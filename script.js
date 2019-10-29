@@ -1,14 +1,8 @@
 window.addEventListener('DOMContentLoaded', (event) => {
-
-  console.log("LOADED");
-  
   var downArrow = document.querySelector('#down-arrow a');
-
   
   downArrow.addEventListener('click', function(e) {
     scrollAnchors(e, e.target);
-
-    console.log("in click event");
   });
 });
 

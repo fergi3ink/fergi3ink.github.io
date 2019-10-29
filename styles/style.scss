@@ -30,7 +30,7 @@ body {
 
     display: inline-block;
     padding: 5em 2em 0;
-    margin-bottom: 5em;
+    margin-bottom: 4em;
 
     h1,
     h2 {
@@ -40,14 +40,13 @@ body {
       text-shadow: 0 0.1em 0.1em rgba($color--black, 0.5);
     }
 
-    a {
-      color: $color--white;
-      text-decoration: underline;
+    svg {
+      width: 1em;
+      fill: $color--white;
     }
   }
 
   #down-arrow {
-    // display: none;
     -moz-animation: bounce 2s infinite;
     -webkit-animation: bounce 2s infinite;
     animation: bounce 2s infinite;
@@ -78,10 +77,9 @@ body {
 }
 
 #work {
-  background-color: $color--three;
-  color: $color--white;
-  
-  border-top: $font-size--small solid $color--white; 
+  background-color: $color--white;
+  color: $color--three;
+
   height: 100vh;
   padding: $space--base;
 
@@ -90,7 +88,7 @@ body {
   }
 
   h2 {
-    color: $color--white;
+    color: $color--three;
     margin-bottom: $space--medium;
   }
 
@@ -116,7 +114,7 @@ body {
     }
 
     a {
-      color: $color--white;
+      color: $color--three;
       text-decoration: underline;
     }
 
@@ -135,12 +133,13 @@ body {
   background-color: $color--five;
   border-bottom: $font-size--small solid $color--three;
   padding: $space--base;
+  padding-top: 5em;
 
   p {
-    width: 50%;
+    width: 75%;
   }
 
   img {
-    width: 40%;
+    width: 30%;
   }
 }
