@@ -22,8 +22,10 @@ $space--medium: 1em;
 $space--small:  0.5em;
 $space--xsmall: 0.25em;
 
-p {
+p, 
+li {
   font-size: $font-size--base;
+  font-family: $font--main;
 }
 
 a, 
@@ -53,6 +55,7 @@ svg.logo {
 
 nav {
   background-color: $color--one;
+  border-bottom: $font-size--small solid $color--three;
   color: $color--three;
 
   padding: 0 $space--base;
@@ -81,19 +84,28 @@ nav {
 
 #footer {
   background-color: $color--one;
+  border-top: $font-size--small solid $color--three;
   color: $color--three;
 
-  padding: 0 $space--base;
+  border-bottom: none;
+  padding: 0 $space--base;  
+}
 
-  .social {
-    list-style-type: none;
-    width: $font-size--small;
-   
-    svg {
-      color: $color--three;
-      width: $font-size--base;
-    }
+.social {
+  list-style-type: none;
+  // width: 1.5em;
+ 
+  svg {
+    color: $color--three;
+    width: 1.5em;
+  }
+  
+  li {
+    margin-right: $space--medium;
   }
 
+  li:last-child {
+    margin-right: 0;
+  }
   
 }

@@ -1,5 +1,7 @@
-p {
+p,
+li {
   font-size: 1.125em;
+  font-family: "Roboto", sans-serif;
 }
 
 a,
@@ -28,6 +30,7 @@ svg.logo {
 
 nav {
   background-color: #F5D547;
+  border-bottom: 0.5em solid #113A83;
   color: #113A83;
   padding: 0 2em;
   position: fixed;
@@ -49,16 +52,24 @@ nav .links a {
 
 #footer {
   background-color: #F5D547;
+  border-top: 0.5em solid #113A83;
   color: #113A83;
+  border-bottom: none;
   padding: 0 2em;
 }
-#footer .social {
+
+.social {
   list-style-type: none;
-  width: 0.5em;
 }
-#footer .social svg {
+.social svg {
   color: #113A83;
-  width: 1.125em;
+  width: 1.5em;
+}
+.social li {
+  margin-right: 1em;
+}
+.social li:last-child {
+  margin-right: 0;
 }
 
 body {
@@ -84,7 +95,7 @@ body {
   border-bottom: 0.25em solid #F5D547;
   color: #FFFFFF;
   display: inline-block;
-  padding: 5em 2em 0;
+  padding: 5em 2em 0.5em;
   margin-bottom: 4em;
 }
 #home .welcome-content h1,
@@ -94,8 +105,10 @@ body {
   text-transform: uppercase;
   text-shadow: 0 0.1em 0.1em rgba(0, 0, 0, 0.5);
 }
+#home .welcome-content h2 {
+  margin-bottom: 0.5em;
+}
 #home .welcome-content svg {
-  width: 1em;
   fill: #FFFFFF;
 }
 #home #down-arrow {
@@ -140,20 +153,21 @@ body {
 }
 #work .project {
   display: inline-block;
-  width: 20%;
+  width: 25%;
 }
 #work .project img {
   opacity: 0.7;
   width: 100%;
+  -moz-box-shadow: 7px 7px 7px -5px #000000;
+  -webkit-box-shadow: 7px 7px 7px -5px #000000;
+  box-shadow: 7px 7px 7px -5px #000000;
 }
 #work .project a img:hover {
   opacity: 1;
 }
-#work .project:nth-child(2) {
-  margin: 0 2%;
-}
 #work .project p {
   font-size: 0.75em;
+  margin-top: 0.5em;
 }
 #work .project a {
   color: #113A83;
@@ -165,12 +179,15 @@ body {
 
 #about {
   background-color: #F3FBF5;
-  border-bottom: 0.5em solid #113A83;
   padding: 2em;
   padding-top: 5em;
 }
+#about h2 {
+  margin-bottom: 0.5em;
+}
 #about p {
-  width: 75%;
+  width: 100%;
+  margin-right: 2em;
 }
 #about img {
   width: 30%;

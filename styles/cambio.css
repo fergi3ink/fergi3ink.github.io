@@ -1,5 +1,7 @@
-p {
+p,
+li {
   font-size: 1.125em;
+  font-family: "Roboto", sans-serif;
 }
 
 a,
@@ -28,6 +30,7 @@ svg.logo {
 
 nav {
   background-color: #F5D547;
+  border-bottom: 0.5em solid #113A83;
   color: #113A83;
   padding: 0 2em;
   position: fixed;
@@ -49,23 +52,42 @@ nav .links a {
 
 #footer {
   background-color: #F5D547;
+  border-top: 0.5em solid #113A83;
   color: #113A83;
+  border-bottom: none;
   padding: 0 2em;
 }
-#footer .social {
+
+.social {
   list-style-type: none;
-  width: 0.5em;
 }
-#footer .social svg {
+.social svg {
   color: #113A83;
-  width: 1.125em;
+  width: 1.5em;
+}
+.social li {
+  margin-right: 1em;
+}
+.social li:last-child {
+  margin-right: 0;
 }
 
 .cambio-content {
-  padding-top: 4em;
+  padding-top: 5.5em;
 }
 .cambio-content h1 {
   font-family: "Roboto", sans-serif;
+}
+.cambio-content h2 {
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+  margin: 0;
+}
+.cambio-content h2 + h3 {
+  padding-top: 0;
+}
+.cambio-content h3 {
+  padding-top: 2em;
 }
 .cambio-content h1,
 .cambio-content h3 {
@@ -73,7 +95,6 @@ nav .links a {
 }
 .cambio-content > div {
   border-bottom: 0.25em solid #F5D547;
-  padding: 2em;
   text-align: center;
 }
 .cambio-content ul {
@@ -81,17 +102,33 @@ nav .links a {
   padding: 0;
 }
 
-#intro div {
-  padding: 2em;
-}
-#intro img {
-  width: 25%;
+.copy-content {
+  margin-right: 5.5em;
+  margin-left: 5.5em;
+  padding-bottom: 2em;
 }
 
-#challenge {
+.bold-content {
   background-color: #F5D547;
 }
 
+#intro {
+  border-bottom: none;
+}
+#intro img {
+  width: 18%;
+  -moz-box-shadow: 7px 7px 7px -5px #000000;
+  -webkit-box-shadow: 7px 7px 7px -5px #000000;
+  box-shadow: 7px 7px 7px -5px #000000;
+}
+
+#research {
+  border-bottom: none;
+}
+#research img:first-of-type,
+#research img:nth-of-type(2) {
+  width: 20%;
+}
 #research ul {
   text-align: left;
   margin-left: auto;
@@ -103,6 +140,13 @@ nav .links a {
   width: 25%;
 }
 
+#style img {
+  width: 40%;
+}
+
+#results {
+  border-bottom: none;
+}
 #results img {
   display: block;
   margin-left: auto;
