@@ -1,6 +1,6 @@
 p,
 li {
-  font-size: 1.125em;
+  font-size: 1em;
   font-family: "Roboto", sans-serif;
 }
 
@@ -45,7 +45,7 @@ nav .links li:nth-child(2) {
 }
 nav .links a {
   color: #113A83;
-  font-size: 1.125em;
+  font-size: 1em;
   font-family: "Roboto", sans-serif;
   margin-right: 0.25em;
 }

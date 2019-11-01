@@ -1,6 +1,6 @@
 p,
 li {
-  font-size: 1.125em;
+  font-size: 1em;
   font-family: "Roboto", sans-serif;
 }
 
@@ -45,7 +45,7 @@ nav .links li:nth-child(2) {
 }
 nav .links a {
   color: #113A83;
-  font-size: 1.125em;
+  font-size: 1em;
   font-family: "Roboto", sans-serif;
   margin-right: 0.25em;
 }
@@ -149,11 +149,11 @@ body {
 }
 #work h2 {
   color: #113A83;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 #work .project {
   display: inline-block;
-  width: 25%;
+  width: 30%;
 }
 #work .project img {
   opacity: 0.7;
@@ -178,16 +178,38 @@ body {
 }
 
 #about {
-  background-color: #F3FBF5;
+  color: #FFFFFF;
+  background-color: #113A83;
   padding: 2em;
   padding-top: 5em;
 }
 #about h2 {
+  color: #FFFFFF;
   margin-bottom: 0.5em;
 }
 #about p {
-  width: 100%;
+  width: 95%;
   margin-right: 2em;
+}
+#about p span {
+  display: inline-block;
+  width: 1em;
+}
+#about p:first-child,
+#about span {
+  font-size: 1.5em;
+  color: #F5D547;
+}
+#about p:nth-child(2) {
+  margin-bottom: 0;
+}
+#about ul {
+  color: #F5D547;
+  margin-bottom: 0;
+  margin-left: 2.5em;
+}
+#about ul li:nth-child(2) {
+  padding: 0 2em;
 }
 #about img {
   width: 30%;
