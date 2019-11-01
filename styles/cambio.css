@@ -172,9 +172,6 @@ nav .links a {
   color: #113A83;
   text-decoration: underline;
 }
-#results .screenshots a:hover {
-  font-weight: 700;
-}
 #results .screenshots img {
   width: 100%;
 }
