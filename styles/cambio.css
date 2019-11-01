@@ -1,3 +1,7 @@
+.width-75 {
+  width: 75%;
+}
+
 p,
 li {
   font-size: 1em;
@@ -7,6 +11,10 @@ li {
 a,
 a:link {
   text-decoration: none;
+}
+a:hover,
+a:link:hover {
+  font-weight: 700;
 }
 
 h1 {
@@ -93,6 +101,10 @@ nav .links a {
 .cambio-content h3 {
   color: #113A83;
 }
+.cambio-content p,
+.cambio-content li {
+  font-size: 1.125em;
+}
 .cambio-content > div {
   border-bottom: 0.25em solid #F5D547;
   text-align: center;
@@ -112,6 +124,10 @@ nav .links a {
   background-color: #F5D547;
 }
 
+.image-copy p {
+  width: 75%;
+}
+
 #intro {
   border-bottom: none;
 }
@@ -125,9 +141,11 @@ nav .links a {
 #research {
   border-bottom: none;
 }
-#research img:first-of-type,
-#research img:nth-of-type(2) {
+#research img:first-of-type {
   width: 20%;
+}
+#research img:last-of-type {
+  width: 40%;
 }
 #research ul {
   text-align: left;
@@ -147,10 +165,18 @@ nav .links a {
 #results {
   border-bottom: none;
 }
-#results img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+#results .screenshots div {
+  width: 30%;
+}
+#results .screenshots a {
+  color: #113A83;
+  text-decoration: underline;
+}
+#results .screenshots a:hover {
+  font-weight: 700;
+}
+#results .screenshots img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=cambio.css.map */

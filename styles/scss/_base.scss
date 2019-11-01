@@ -22,6 +22,10 @@ $space--medium: 1em;
 $space--small:  0.5em;
 $space--xsmall: 0.25em;
 
+.width-75 {
+  width: 75%;
+}
+
 p, 
 li {
   font-size: $font-size--base;
@@ -31,6 +35,10 @@ li {
 a, 
 a:link {
   text-decoration: none;
+
+  &:hover {
+    font-weight: 700;
+  }
 }
 
 h1 {

@@ -26,6 +26,11 @@
     color: $color--three;
   }
 
+  p,
+  li {
+    font-size: 1.125em;
+  }
+
   & > div {
     border-bottom: $font-size--xsmall solid $color--one;
     text-align: center;
@@ -47,6 +52,12 @@
   background-color: $color--one;
 }
 
+.image-copy {
+  p {
+    width: 75%;
+  }
+}
+
 #intro {
   border-bottom: none;
   
@@ -62,9 +73,12 @@
 #research {
   border-bottom: none;
 
-  img:first-of-type,
-  img:nth-of-type(2) {
+  img:first-of-type {
     width: 20%;
+  }
+
+  img:last-of-type {
+    width: 40%;
   }
 
   ul {
@@ -90,10 +104,24 @@
 
 #results {
   border-bottom: none;
-  img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+
+  .screenshots {
+    div {
+      width: 30%;
+    }
+    
+    a {
+      color: $color--three;
+      text-decoration: underline;
+
+      &:hover {
+        font-weight: 700;
+      }
+    }
+    
+    img {
+      width: 100%;
+    }
   }
 }
 
