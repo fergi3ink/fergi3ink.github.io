@@ -115,17 +115,14 @@ nav .links a {
 }
 
 .copy-content {
-  margin-right: 5.5em;
-  margin-left: 5.5em;
   padding-bottom: 2em;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 770px;
 }
 
 .bold-content {
   background-color: #F5D547;
-}
-
-.image-copy p {
-  width: 75%;
 }
 
 #intro {
@@ -144,18 +141,25 @@ nav .links a {
 #research img:first-of-type {
   width: 20%;
 }
-#research img:last-of-type {
-  width: 40%;
-}
 #research ul {
   text-align: left;
   margin-left: auto;
   margin-right: auto;
   width: 60%;
 }
+#research .image-copy p {
+  display: inline-block;
+  vertical-align: middle;
+}
+#research .image-copy img {
+  width: 40%;
+}
+#research .image-copy p {
+  width: 50%;
+}
 
 #design-principles div div {
-  width: 25%;
+  width: 28%;
 }
 
 #style img {
@@ -174,6 +178,32 @@ nav .links a {
 }
 #results .screenshots img {
   width: 100%;
+}
+
+#carousel .carousel-inner,
+#carousel h5,
+#carousel p {
+  color: #113A83;
+}
+#carousel img {
+  width: 30%;
+}
+#carousel .carousel-item:first-of-type img {
+  width: 40%;
+}
+#carousel .carousel-item:last-of-type {
+  padding-bottom: 0.5em;
+}
+#carousel .carousel-item:last-of-type img {
+  width: 25%;
+}
+#carousel span {
+  color: #113A83;
+  font-size: 2em;
+}
+#carousel .carousel-item:first-of-type {
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 /*# sourceMappingURL=cambio.css.map */

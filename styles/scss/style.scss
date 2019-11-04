@@ -29,7 +29,7 @@ body {
     color: $color--white;
 
     display: inline-block;
-    padding: 5em $space--base $space--small;
+    padding: 9em $space--base $space--small;
     margin-bottom: 4em;
 
     h1,
@@ -168,7 +168,7 @@ body {
   ul {
     color: $color--one;
     margin-bottom: 0;
-    margin-left: 2.5em;
+    margin-left: 1.5em;
 
     li:nth-child(2) {
       padding: 0 $space--base;
@@ -176,6 +176,10 @@ body {
   }
 
   img {
+    -moz-box-shadow:    7px 7px 7px -5px $color--black;
+    -webkit-box-shadow: 7px 7px 7px -5px $color--black;
+    box-shadow:         7px 7px 7px -5px $color--black;
+
     width: 30%;
   }
 }

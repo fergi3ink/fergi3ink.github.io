@@ -48,10 +48,12 @@
           </div>
         </div>
 
-        <div id="challenge" class="bold-content">
-          <h2>Challenge</h2>
+        <div id="role" class="bold-content">
+          <h2>My Role</h2>
           <p class="copy-content">
-              In order to gain the next round of funding, Cambio needed a landing page for both job seekers and employers. With their next investor meeting only 3 weeks away, I needed to research and design an initial mockup.</p>
+            Cambio approached Indeed Inovation in need of a web platform to help them gain the next round of funding. In a 3 week sprint we were tasked with designing the landing page, an informational page for job seekers and an informational page for employers. <br>
+            Two UX Designers and myself were assigned to this project. As a team we conducted user research. I created storyboards, worked on key user flows and wireframes, and created low fidelity wireframes and high fidelity mockups.
+          </p>
         </div>
         
         <div id="research" class="copy-content">
@@ -61,8 +63,8 @@
           <p>What are the pain points in the hiring process? I needed to discover what made the process of seaching and hiring for a role so difficult. I created a 15 question survey to better understand the pain points of job seekers and hiring managers. In total, 60 people were surveyed: 30 job seekers and 30 members of hiring teams.</p>
   
           <h3>Synthasizes</h3>
-          <p>I created a site map to analyze the data from the survey. 
-            Key takeaways from job seekers and hiring managers:</p>
+          <p>I created a site map to analyze the data from the survey. </p>
+          <p> Key takeaways from job seekers:</p>
           <ul>
             <li>&#8227; Users said ATS systems are a dead end.</li>
             <li>&#8227; Users said that they were missing out on a lot of the areas top talent.</li>
@@ -73,15 +75,23 @@
             <li>&#8227; Users never know what to expect from a candidate when interacting via email and phone.</li>
           </ul>
 
-          <h3>User</h3>
-          <ul class="text-center">
-            <li>Name: Brian T.</li>
-            <li>Age: 25</li>
-            <li>Location: Austin, TX.</li>
-            <li>Industry: Marketing</li>
+          <p> Key takeaways from employers:</p>
+          <ul>
+            <li>&#8227; ATS systems over look a lot of top talent. If a candidate doesn't make it pass the system, we lose their application.</li>
+            <li>&#8227; Employee referrals, meetups, and LinkedIn is where we do a lot of our sourcing.</li>
+            <li>&#8227; We have a lot of candidates and appliactions that we have to review. </li>
           </ul>
-          <img src="images/cambio_user_persona.jpg" alt="Cambio User Persona">
-          <p>In order to frame the conversation with my team, I created Brian. Two weeks ago, due to company downsizing, Brain was let go from her role as a Marketing Manager. He has been applying to jobs and reaching out to recruiters on Indeed and LinkedIn. He is receiving generic rejection letters from ATS systems and rarely does she receive any reply from recruiters.</p>
+
+          <h3>User</h3>
+          <div class="image-copy">
+            <img src="images/cambio_user_persona.jpg" alt="Cambio User Persona - Brian">
+            <p>Brian is unemployed. Two weeks ago, due to company downsizing, Brain was let go from his role as a Marketing Manager. He has been applying to jobs and reaching out to recruiters on Indeed and LinkedIn. He is receiving generic rejection letters from ATS systems and rarely does he receive any reply from recruiters. He is looking for easier ways to connect with recruiters and secure a new position.</p>
+          </div>
+
+          <div class="image-copy">
+            <p>Cassie is a Senior recruiter at a large recruiting agency. Her company has an ATS system that they use for some of their clients however, she gets most of her referrals through LinkedIn and other platforms. She has a hard time finding the right talent and often places over qualified people into positions. She is looking for a better way to get one on ones with candidates without losing a lot of time</p>
+            <img src="images/cambio_user_cassie.jpg" alt="Cambio User Persona - Cassie">
+          </div>
         </div>
 
         <div id="design-principles" class="bold-content">
@@ -97,14 +107,40 @@
             </div>
             <div>
               <h4>Empowerment</h4>
-              <p>Users should have control of their job search. Profiles should be tailored to their preferences. Users should have the ability to present more than just words on a screen.</p>
+              <p>Users should have control of their job search. Profiles should be tailored to their preferences. Users should have the ability to present themselves as more than just words on a screen.</p>
             </div>
           </div>
         </div>
 
         <div id="wireframes" class="copy-content">
           <h2>Wireframes</h2>
-          <p>I created 3 pages. The landing page providing information for all users. Informational pages for job seekers and employers prompting them to sign up.</p>
+          <p>I created 3 pages. The landing page providing information for all users, informational pages for job seekers, and informational pages for employers.</p>
+          <div id="carousel">
+            <div id="carouselCaptions" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselCaptions" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-interval="10000">
+                  <img src="./images/cambio_wf_1.jpg" alt="Cambio homepage wireframe">
+                </div>
+                <div class="carousel-item" data-interval="10000">
+                  <img src="./images/cambio_wf_seeker.jpg" alt="Cambio signup wireframe">
+                </div>
+                  <div class="carousel-item">
+                    <img src="./images/cambio_wf_employer.jpg" alt="Cambio job seeker wireframe">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselCaptions" role="button" data-slide="prev">
+                  <span>&#10594;	</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselCaptions" role="button" data-slide="next">
+                  <span>&#10596;</span>
+                </a>
+              </div>
+            </div>
         </div>
 
         <div id="style" class="copy-content">
@@ -118,20 +154,6 @@
         <div id="results">
           <h2>Results</h2>
           <p>The deadline was met and Cambio was successful in securing their round of funding.</p>
-          <div class="screenshots d-flex justify-content-between">
-            <div>
-              <a href="https://cambiome.com/" target="_blank">Landing Page</a>
-              <img src="./images/cambio_landingpage.png" alt="Cambio landing page">
-            </div>
-            <div>
-              <a href="https://cambiome.com/#/employer" target="_blank">Employer Page</a>
-              <img src="./images/cambio_employeerpage.jpg" alt="Cambio employer page">
-            </div>
-            <div>
-              <a href="https://cambiome.com/#/jobseeker" target="_blank">Job Seeker Page</a>
-              <img src="./images/cambio_seekerspage.png" alt="Cambio job seeker page">
-            </div>
-          </div>
         </div>
 
         <div id="footer" class="d-flex justify-content-between align-items-center">

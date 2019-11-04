@@ -43,19 +43,14 @@
 }
 
 .copy-content {
-  margin-right: 5.5em;
-  margin-left: 5.5em; 
   padding-bottom: $space--base;
+  margin-right: auto;
+  margin-left: auto; 
+  max-width: 770px;
 }
 
 .bold-content {
   background-color: $color--one;
-}
-
-.image-copy {
-  p {
-    width: 75%;
-  }
 }
 
 #intro {
@@ -77,10 +72,6 @@
     width: 20%;
   }
 
-  img:last-of-type {
-    width: 40%;
-  }
-
   ul {
     text-align: left;
 
@@ -88,11 +79,27 @@
     margin-right: auto;
     width: 60%;
   }
+
+  .image-copy {
+    
+    p {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  
+    img {
+      width: 40%;
+    }
+  
+    p {
+      width: 50%;
+    }
+  }
 }
 
 #design-principles {
   div div {
-    width: 25%;
+    width: 28%;
   }
 }
 
@@ -120,6 +127,40 @@
     img {
       width: 100%;
     }
+  }
+}
+
+#carousel {
+  .carousel-inner,
+  h5,
+  p {
+    color: $color--three;
+  }
+
+  img {
+    width: 30%;
+  }
+
+  .carousel-item:first-of-type img {
+    width: 40%;
+  }
+
+  .carousel-item:last-of-type {
+    padding-bottom: .5em;
+
+    img {
+      width: 25%;
+    }
+  }
+
+  span {
+    color: $color--three;
+    font-size: 2em;
+  }
+
+  .carousel-item:first-of-type {
+    padding-top: 1em;
+    padding-bottom: 1em;
   }
 }
 
