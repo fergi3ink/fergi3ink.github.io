@@ -53,6 +53,11 @@
   background-color: $color--one;
 }
 
+.carousel span {
+  color: $color--three;
+  font-size: 2em;
+}
+
 #intro {
   border-bottom: none;
   
@@ -95,6 +100,34 @@
       width: 50%;
     }
   }
+
+  .carousel {
+    img {
+      width: 30%;
+    }
+  
+    .carousel-item:first-of-type img {
+      width: 40%;
+    }
+  
+    .carousel-item:last-of-type {
+      padding-bottom: .5em;
+  
+      img {
+        width: 25%;
+      }
+    }
+  
+    span {
+      color: $color--three;
+      font-size: 2em;
+    }
+  
+    .carousel-item:first-of-type {
+      padding-top: 1em;
+      padding-bottom: 1em;
+    }
+  }
 }
 
 #design-principles {
@@ -128,40 +161,15 @@
       width: 100%;
     }
   }
-}
 
-#carousel {
-  .carousel-inner,
-  h5,
-  p {
-    color: $color--three;
-  }
-
-  img {
-    width: 30%;
-  }
-
-  .carousel-item:first-of-type img {
-    width: 40%;
-  }
-
-  .carousel-item:last-of-type {
-    padding-bottom: .5em;
-
+  .carousel {
     img {
-      width: 25%;
+      width: 20%;
     }
   }
-
-  span {
-    color: $color--three;
-    font-size: 2em;
-  }
-
-  .carousel-item:first-of-type {
-    padding-top: 1em;
-    padding-bottom: 1em;
-  }
 }
+
+
+
 
 

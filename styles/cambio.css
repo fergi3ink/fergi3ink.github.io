@@ -125,6 +125,11 @@ nav .links a {
   background-color: #F5D547;
 }
 
+.carousel span {
+  color: #113A83;
+  font-size: 2em;
+}
+
 #intro {
   border-bottom: none;
 }
@@ -157,6 +162,26 @@ nav .links a {
 #research .image-copy p {
   width: 50%;
 }
+#research .carousel img {
+  width: 30%;
+}
+#research .carousel .carousel-item:first-of-type img {
+  width: 40%;
+}
+#research .carousel .carousel-item:last-of-type {
+  padding-bottom: 0.5em;
+}
+#research .carousel .carousel-item:last-of-type img {
+  width: 25%;
+}
+#research .carousel span {
+  color: #113A83;
+  font-size: 2em;
+}
+#research .carousel .carousel-item:first-of-type {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
 
 #design-principles div div {
   width: 28%;
@@ -179,31 +204,8 @@ nav .links a {
 #results .screenshots img {
   width: 100%;
 }
-
-#carousel .carousel-inner,
-#carousel h5,
-#carousel p {
-  color: #113A83;
-}
-#carousel img {
-  width: 30%;
-}
-#carousel .carousel-item:first-of-type img {
-  width: 40%;
-}
-#carousel .carousel-item:last-of-type {
-  padding-bottom: 0.5em;
-}
-#carousel .carousel-item:last-of-type img {
-  width: 25%;
-}
-#carousel span {
-  color: #113A83;
-  font-size: 2em;
-}
-#carousel .carousel-item:first-of-type {
-  padding-top: 1em;
-  padding-bottom: 1em;
+#results .carousel img {
+  width: 20%;
 }
 
 /*# sourceMappingURL=cambio.css.map */
