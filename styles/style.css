@@ -18,8 +18,12 @@ a:link:hover {
 }
 
 h1 {
-  font-size: 3.75em;
   font-weight: 700;
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3.75em;
+  }
 }
 
 h2 {
@@ -87,7 +91,6 @@ body {
 #home {
   background: #ABABAB url("https://images.unsplash.com/photo-1502252430442-aac78f397426?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80") no-repeat;
   background-size: cover;
-  padding-top: 4em;
 }
 #home .image-gradient {
   background-image: linear-gradient(rgba(180, 180, 186, 0.8), rgba(17, 58, 131, 0.5));
@@ -127,6 +130,11 @@ body {
 #home #down-arrow a {
   color: rgba(255, 255, 255, 0.7);
   font-size: 2em;
+}
+@media (min-width: 768px) {
+  #home {
+    padding-top: 4em;
+  }
 }
 
 @keyframes bounce {

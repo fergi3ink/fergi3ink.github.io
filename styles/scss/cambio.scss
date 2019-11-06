@@ -1,10 +1,14 @@
 @import 'base';
 
 .cambio-content {
-  padding-top: 5.5em;
+  padding-top: 6.5em;
 
   h1 {
     font-family: $font--main;
+
+    & + h3 {
+      padding-top: 0;
+    }
   }
 
   h2 {
@@ -19,6 +23,7 @@
 
   h3 {
     padding-top: $space--base;
+    text-decoration: underline;
   }
 
   h1,
@@ -28,7 +33,7 @@
 
   p,
   li {
-    font-size: 1.125em;
+    font-size: 1.25em;
   }
 
   & > div {
@@ -38,7 +43,12 @@
 
   ul {
     list-style-type: none;
+    text-align: left;
+    
     padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
   }
 }
 
@@ -51,6 +61,17 @@
 
 .bold-content {
   background-color: $color--one;
+  -moz-box-shadow:    0 7px 7px -6px $color--black, 0 -7px 7px -6px $color--black;
+  -webkit-box-shadow: 0 7px 7px -6px $color--black, 0 -7px 7px -6px $color--black;
+  box-shadow:       0 7px 7px -6px $color--black, 0 -7px 7px -6px $color--black;
+}
+
+.two-image {
+  padding-top: $space--base;
+
+  img {
+    width: 45%;
+  }
 }
 
 .carousel span {
@@ -64,40 +85,49 @@
   img {
     width: 18%;
 
+    margin: $space--small 0;
+
     -moz-box-shadow:    7px 7px 7px -5px $color--black;
     -webkit-box-shadow: 7px 7px 7px -5px $color--black;
     box-shadow:         7px 7px 7px -5px $color--black;
+  }
+
+  h2 {
+    padding-top: 0; 
+  }
+}
+
+#role {
+  p {
+    padding-bottom: 0;
   }
 }
 
 #research {
   border-bottom: none;
 
-  img:first-of-type {
-    width: 20%;
+  img {
+    -moz-box-shadow:    7px 7px 7px -5px $color--black;
+    -webkit-box-shadow: 7px 7px 7px -5px $color--black;
+    box-shadow:         7px 7px 7px -5px $color--black;
   }
-
-  ul {
-    text-align: left;
-
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
+  
+  #img-stickies {
+    width: 45%;
+    margin-bottom: $space--base;
   }
 
   .image-copy {
+    margin-bottom: $space--small;
     
     p {
       display: inline-block;
       vertical-align: middle;
+      width: 45%;
     }
   
     img {
-      width: 40%;
-    }
-  
-    p {
-      width: 50%;
+      width: 45%;
     }
   }
 
@@ -136,9 +166,35 @@
   }
 }
 
+#wireframes {
+  #journey_map {
+    width: 100%;
+    margin-bottom: $space--base;
+  }
+
+  .carousel {
+    img {
+      width: 30%;
+    }
+
+    .carousel-item:first-of-type {
+      img {
+        width: 40%;
+      }
+    }
+
+    .carousel-item:last-of-type {
+      img {
+        width: 25%;
+      }
+    }
+  }
+
+}
+
 #style {
-  img {
-    width: 40%;
+  img:nth-child(3) {
+    width: 60%;
   }
 }
 

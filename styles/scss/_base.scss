@@ -16,11 +16,13 @@ $color--five:   #F3FBF5;
 $color--black:  #000000;
 $color--white:  #FFFFFF;
 
-
 $space--base:   2em;
 $space--medium: 1em;
 $space--small:  0.5em;
 $space--xsmall: 0.25em;
+
+$breakpoint-large: 992px;
+$breakpoint-medium: 768px;
 
 .width-75 {
   width: 75%;
@@ -42,8 +44,11 @@ a:link {
 }
 
 h1 {
-  font-size: $font-size--xlarge;
   font-weight: 700;
+  
+  @media (min-width: $breakpoint-medium) {
+    font-size: $font-size--xlarge;
+  }
 }
 
 h2 {
@@ -101,7 +106,6 @@ nav {
 
 .social {
   list-style-type: none;
-  // width: 1.5em;
  
   svg {
     color: $color--three;
