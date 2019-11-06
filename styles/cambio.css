@@ -84,46 +84,36 @@ nav .links a {
   margin-right: 0;
 }
 
-.cambio-content {
-  padding-top: 6.5em;
-}
-.cambio-content h1 {
+h1 {
+  padding-top: 2.5em;
   font-family: "Roboto", sans-serif;
 }
-.cambio-content h1 + h3 {
+h1 + h3 {
   padding-top: 0;
 }
-.cambio-content h2 {
+
+h2 {
   padding-bottom: 0.5em;
   padding-top: 0.5em;
   margin: 0;
 }
-.cambio-content h2 + h3 {
+h2 + h3 {
   padding-top: 0;
 }
-.cambio-content h3 {
+
+h3 {
   padding-top: 2em;
   text-decoration: underline;
 }
-.cambio-content h1,
-.cambio-content h3 {
+
+h1,
+h3 {
   color: #113A83;
 }
-.cambio-content p,
-.cambio-content li {
+
+p,
+li {
   font-size: 1.25em;
-}
-.cambio-content > div {
-  border-bottom: 0.25em solid #F5D547;
-  text-align: center;
-}
-.cambio-content ul {
-  list-style-type: none;
-  text-align: left;
-  padding: 0;
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
 }
 
 .copy-content {
@@ -152,104 +142,116 @@ nav .links a {
   font-size: 2em;
 }
 
-#intro {
+.cambio-content > div,
+.ink-well-content > div {
+  border-bottom: 0.25em solid #F5D547;
+  text-align: center;
+}
+.cambio-content ul,
+.ink-well-content ul {
+  list-style-type: none;
+  text-align: left;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+.cambio-content #intro,
+.ink-well-content #intro {
   border-bottom: none;
 }
-#intro img {
+.cambio-content #intro img,
+.ink-well-content #intro img {
   width: 18%;
   margin: 0.5em 0;
   -moz-box-shadow: 7px 7px 7px -5px #000000;
   -webkit-box-shadow: 7px 7px 7px -5px #000000;
   box-shadow: 7px 7px 7px -5px #000000;
 }
-#intro h2 {
+.cambio-content #intro h2,
+.ink-well-content #intro h2 {
   padding-top: 0;
 }
 
-#role p {
+.cambio-content #role p {
   padding-bottom: 0;
 }
-
-#research {
+.cambio-content #research {
   border-bottom: none;
 }
-#research img {
+.cambio-content #research img {
   -moz-box-shadow: 7px 7px 7px -5px #000000;
   -webkit-box-shadow: 7px 7px 7px -5px #000000;
   box-shadow: 7px 7px 7px -5px #000000;
 }
-#research #img-stickies {
+.cambio-content #research #img-stickies {
   width: 45%;
   margin-bottom: 2em;
 }
-#research .image-copy {
+.cambio-content #research .image-copy {
   margin-bottom: 0.5em;
 }
-#research .image-copy p {
+.cambio-content #research .image-copy p {
   display: inline-block;
   vertical-align: middle;
   width: 45%;
 }
-#research .image-copy img {
+.cambio-content #research .image-copy img {
   width: 45%;
 }
-#research .carousel img {
+.cambio-content #research .carousel img {
   width: 30%;
 }
-#research .carousel .carousel-item:first-of-type img {
+.cambio-content #research .carousel .carousel-item:first-of-type img {
   width: 40%;
 }
-#research .carousel .carousel-item:last-of-type {
+.cambio-content #research .carousel .carousel-item:last-of-type {
   padding-bottom: 0.5em;
 }
-#research .carousel .carousel-item:last-of-type img {
+.cambio-content #research .carousel .carousel-item:last-of-type img {
   width: 25%;
 }
-#research .carousel span {
+.cambio-content #research .carousel span {
   color: #113A83;
   font-size: 2em;
 }
-#research .carousel .carousel-item:first-of-type {
+.cambio-content #research .carousel .carousel-item:first-of-type {
   padding-top: 1em;
   padding-bottom: 1em;
 }
-
-#design-principles div div {
+.cambio-content #design-principles div div {
   width: 28%;
 }
-
-#wireframes #journey_map {
+.cambio-content #wireframes #journey_map {
   width: 100%;
   margin-bottom: 2em;
 }
-#wireframes .carousel img {
+.cambio-content #wireframes .carousel img {
   width: 30%;
 }
-#wireframes .carousel .carousel-item:first-of-type img {
+.cambio-content #wireframes .carousel .carousel-item:first-of-type img {
   width: 40%;
 }
-#wireframes .carousel .carousel-item:last-of-type img {
+.cambio-content #wireframes .carousel .carousel-item:last-of-type img {
   width: 25%;
 }
-
-#style img:nth-child(3) {
+.cambio-content #style img:nth-child(3) {
   width: 60%;
 }
-
-#results {
+.cambio-content #results {
   border-bottom: none;
 }
-#results .screenshots div {
+.cambio-content #results .screenshots div {
   width: 30%;
 }
-#results .screenshots a {
+.cambio-content #results .screenshots a {
   color: #113A83;
   text-decoration: underline;
 }
-#results .screenshots img {
+.cambio-content #results .screenshots img {
   width: 100%;
 }
-#results .carousel img {
+.cambio-content #results .carousel img {
   width: 20%;
 }
 

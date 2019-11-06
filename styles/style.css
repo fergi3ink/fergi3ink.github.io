@@ -161,15 +161,17 @@ body {
   padding: 2em;
 }
 #work .content {
-  padding-top: 4em;
+  padding-top: 3em;
 }
 #work h2 {
   color: #113A83;
-  margin-bottom: 2em;
 }
 #work .project {
   display: inline-block;
   width: 30%;
+}
+#work .project:first-of-type {
+  width: 29%;
 }
 #work .project img {
   opacity: 0.7;
@@ -214,6 +216,9 @@ body {
 #about p:first-child,
 #about span {
   font-size: 1.5em;
+  color: #F5D547;
+}
+#about a {
   color: #F5D547;
 }
 #about p:nth-child(2) {

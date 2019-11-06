@@ -90,17 +90,20 @@ body {
   padding: $space--base;
 
   .content {
-    padding-top: 4em;
+    padding-top: 3em;
   }
 
   h2 {
     color: $color--three;
-    margin-bottom: $space--base;
   }
 
   .project {
     display: inline-block;
     width: 30%;
+
+    &:first-of-type {
+      width: 29%;
+    }
 
     img {
       opacity: 0.7;
@@ -160,6 +163,10 @@ body {
   p:first-child,
   span {
     font-size: 1.5em;
+    color: $color--one;
+  }
+
+  a {
     color: $color--one;
   }
 
