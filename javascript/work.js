@@ -3,26 +3,29 @@ window.addEventListener('DOMContentLoaded', () => {
   var passwordInput = document.getElementById('password');
   var footer = document.getElementById('footer');
   var workContent = document.getElementById('work-content');
+  var storageValue = window.localStorage.getItem('SF');
 
-  
+  function grantAccess() {
+    footer.classList.remove('blocked');
+    form.classList.add('blocked');
+    workContent.classList.remove('blocked');
+  }
+
+  if (storageValue) {
+    grantAccess();
+  }
+
   form.addEventListener('submit', (event) => {
     event.preventDefault();
 
-    if(passwordInput.value == 'SamanthaFergus2019') {
-      footer.classList.remove('blocked');
-      form.classList.add('blocked');
-      workContent.classList.remove('blocked');
+    if (storageValue) {
+      grantAccess()
+    } else if(passwordInput.value == 'SamanthaFergus2019') {
+      window.localStorage.setItem('SF', true);
+      grantAccess()
+    } else {
+      passwordInput.classList.add('is-invalid');
     }
-
-    
-
-    // remove blocked form footer
-    // hide form 
-    // show content
-
-    // eventually save to local storage
-    
   })
-  
 });
 
