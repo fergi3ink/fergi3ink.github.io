@@ -156,6 +156,10 @@ li {
   color: #FFFFFF;
 }
 
+.orange-content {
+  background-color: #F09D17;
+}
+
 .image-row {
   padding-bottom: 2em;
   margin-right: auto;
@@ -170,9 +174,21 @@ li {
   width: 100%;
 }
 
+.carousel {
+  padding-bottom: 2em;
+}
+.carousel img {
+  width: 30%;
+}
 .carousel span {
-  color: #113A83;
+  color: #FFFFFF;
   font-size: 2em;
+}
+.carousel .carousel-control-prev {
+  margin-left: 10em;
+}
+.carousel .carousel-control-next {
+  margin-right: 10em;
 }
 
 .parallax {
@@ -211,12 +227,18 @@ li {
 .cambio-content #styleguide {
   width: 68%;
   margin-right: 2.5em;
+  -moz-box-shadow: 7px 7px 7px -5px #000000;
+  -webkit-box-shadow: 7px 7px 7px -5px #000000;
+  box-shadow: 7px 7px 7px -5px #000000;
 }
 .cambio-content .logo {
   width: 25%;
 }
 .cambio-content .logo img {
   width: 100%;
+  -moz-box-shadow: 7px 7px 7px -5px #000000;
+  -webkit-box-shadow: 7px 7px 7px -5px #000000;
+  box-shadow: 7px 7px 7px -5px #000000;
 }
 .cambio-content #solution .image-row img {
   width: 80%;
@@ -236,8 +258,48 @@ li {
   width: 25%;
   margin-top: -10em;
 }
-.cambio-content #landing.bold-content {
-  background-color: #F09D17;
+.cambio-content #user-profile img:first-child {
+  vertical-align: top;
+  margin-left: -10em;
+  margin-right: -7em;
+  margin-top: -5em;
+  width: 70%;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.cambio-content #user-profile img:last-child {
+  width: 55%;
+}
+.cambio-content #jobs img {
+  width: 30%;
+  -moz-box-shadow: 7px 7px 7px -5px #000000;
+  -webkit-box-shadow: 7px 7px 7px -5px #000000;
+  box-shadow: 7px 7px 7px -5px #000000;
+}
+.cambio-content #jobs .carousel {
+  margin-top: 2em;
+  padding-bottom: 0;
+}
+.cambio-content #jobs .carousel .carousel-indicators {
+  margin-bottom: 0;
+}
+.cambio-content #jobs .carousel .carousel-item {
+  padding-bottom: 6em;
+}
+.cambio-content #jobs .carousel .carousel-caption {
+  z-index: 0;
+}
+.cambio-content #jobs .carousel .carousel-item:last-child .carousel-caption {
+  bottom: -1em;
+}
+.cambio-content #jobs .carousel .carousel-control-next,
+.cambio-content #jobs .carousel .carousel-control-prev {
+  bottom: 7em;
+}
+.cambio-content #jobs .carousel span {
+  color: #177F07;
+  font-size: 2em;
 }
 
 /*# sourceMappingURL=cambio.css.map */

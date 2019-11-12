@@ -79,6 +79,10 @@ li {
   }
 }
 
+.orange-content {
+  background-color: $cambio-orange;
+}
+
 .image-row {
   padding-bottom: $space--base;
   margin-right: auto;
@@ -95,17 +99,25 @@ li {
   }
 }
 
-// .two-image {
-//   padding-top: $space--base;
+.carousel {
+  padding-bottom: $space--base;
 
-//   img {
-//     width: 45%;
-//   }
-// }
+  img {
+    width: 30%;
+  }
 
-.carousel span {
-  color: $color--three;
-  font-size: 2em;
+  span {
+    color: $color--white;
+    font-size: 2em;
+  }
+
+  .carousel-control-prev {
+    margin-left: 10em;
+  }
+
+  .carousel-control-next {
+    margin-right: 10em;
+  }
 }
 
 .parallax {
@@ -152,127 +164,13 @@ li {
     }
   }
 
-  // #research {
-  //   img {
-  //     -moz-box-shadow:    7px 7px 7px -5px $color--black;
-  //     -webkit-box-shadow: 7px 7px 7px -5px $color--black;
-  //     box-shadow:         7px 7px 7px -5px $color--black;
-  //   }
-    
-  //   #img-stickies {
-  //     width: 45%;
-  //     margin-bottom: $space--base;
-  //   }
-
-  //   .image-copy {
-  //     margin-bottom: $space--small;
-      
-  //     p {
-  //       display: inline-block;
-  //       vertical-align: middle;
-  //       width: 45%;
-  //     }
-    
-  //     img {
-  //       width: 45%;
-  //     }
-  //   }
-
-  //   .carousel {
-  //     img {
-  //       width: 30%;
-  //     }
-    
-  //     .carousel-item:first-of-type img {
-  //       width: 40%;
-  //     }
-    
-  //     .carousel-item:last-of-type {
-  //       padding-bottom: .5em;
-    
-  //       img {
-  //         width: 25%;
-  //       }
-  //     }
-    
-  //     span {
-  //       color: $color--three;
-  //       font-size: 2em;
-  //     }
-    
-  //     .carousel-item:first-of-type {
-  //       padding-top: 1em;
-  //       padding-bottom: 1em;
-  //     }
-  //   }
-  // }
-
-  // #design-principles {
-  //   div div {
-  //     width: 28%;
-  //   }
-  // }
-
-  // #wireframes {
-  //   #journey_map {
-  //     width: 100%;
-  //     margin-bottom: $space--base;
-  //   }
-
-  //   .carousel {
-  //     img {
-  //       width: 30%;
-  //     }
-
-  //     .carousel-item:first-of-type {
-  //       img {
-  //         width: 40%;
-  //       }
-  //     }
-
-  //     .carousel-item:last-of-type {
-  //       img {
-  //         width: 25%;
-  //       }
-  //     }
-  //   }
-
-  // }
-
-  // #style {
-  //   img:nth-child(3) {
-  //     width: 60%;
-  //   }
-  // }
-
-  // #results {
-  //   .screenshots {
-  //     div {
-  //       width: 30%;
-  //     }
-      
-  //     a {
-  //       color: $color--three;
-  //       text-decoration: underline;
-
-        
-  //     }
-      
-  //     img {
-  //       width: 100%;
-  //     }
-  //   }
-
-  //   .carousel {
-  //     img {
-  //       width: 20%;
-  //     }
-  //   }
-  // }
-
   #styleguide {
     width: 68%;
     margin-right: 2.5em;
+
+    -moz-box-shadow:    $shadow--image;
+    -webkit-box-shadow: $shadow--image;
+    box-shadow:         $shadow--image;
   }
 
   .logo {
@@ -280,6 +178,10 @@ li {
 
     img {
       width: 100%;
+
+      -moz-box-shadow:    $shadow--image;
+      -webkit-box-shadow: $shadow--image;
+      box-shadow:         $shadow--image;
     }
   }
 
@@ -308,7 +210,61 @@ li {
     }
   }
 
-  #landing.bold-content {
-    background-color: $cambio-orange;
+  #user-profile {
+    img:first-child {
+      vertical-align: top;
+      margin-left: -10em;
+      margin-right: -7em;
+      margin-top: -5em;
+      width: 70%;
+
+      -moz-box-shadow:    none;
+      -webkit-box-shadow: none;
+      box-shadow:         none;
+    }
+
+    img:last-child {
+      width: 55%;
+    }
+  }
+
+  #jobs {
+    img {
+      width: 30%;
+      -moz-box-shadow:    $shadow--image;
+      -webkit-box-shadow: $shadow--image;
+      box-shadow:         $shadow--image;
+    }
+
+    .carousel {
+      margin-top: $space--base;
+      padding-bottom: 0;
+
+      .carousel-indicators {
+        margin-bottom: 0;
+      }
+
+      .carousel-item {
+        padding-bottom: 6em;
+      }
+
+      .carousel-caption {
+        z-index: 0;
+      }
+
+      .carousel-item:last-child .carousel-caption {
+        bottom: -1em;
+      }
+
+      .carousel-control-next,
+      .carousel-control-prev {
+        bottom: 7em;
+      }
+
+      span {
+        color: $cambio-forest-green;
+        font-size: 2em;
+      }
+    }
   }
 }
