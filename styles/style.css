@@ -176,9 +176,10 @@ body {
 #work .project img {
   opacity: 0.7;
   width: 100%;
-  -moz-box-shadow: 7px 7px 7px -5px #000000;
-  -webkit-box-shadow: 7px 7px 7px -5px #000000;
-  box-shadow: 7px 7px 7px -5px #000000;
+  background-color: #F5D547;
+  -moz-box-shadow: 7px 7px 12px -6px #000000, -7px 7px 12px -6px #000000;
+  -webkit-box-shadow: 7px 7px 12px -6px #000000, -7px 7px 12px -6px #000000;
+  box-shadow: 7px 7px 12px -6px #000000, -7px 7px 12px -6px #000000;
 }
 #work .project a img:hover {
   opacity: 1;
