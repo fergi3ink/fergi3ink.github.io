@@ -17,6 +17,25 @@ nav,
   color: $color--black;
 }
 
+#password-prompt {
+  padding-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.blocked {
+  display: none;
+
+  &#footer {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+
 #protoype {
   width: 100%;
   margin-top: -5em;
