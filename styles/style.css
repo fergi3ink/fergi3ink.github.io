@@ -4,7 +4,7 @@
 
 p,
 li {
-  font-size: 1em;
+  font-size: 1.25em;
   font-family: "Roboto", sans-serif;
 }
 
@@ -57,7 +57,7 @@ nav .links li:nth-child(2) {
 }
 nav .links a {
   color: #113A83;
-  font-size: 1em;
+  font-size: 1.25em;
   font-family: "Roboto", sans-serif;
   margin-right: 0.25em;
 }
@@ -166,13 +166,6 @@ body {
 #work h2 {
   color: #113A83;
 }
-#work .project {
-  display: inline-block;
-  width: 30%;
-}
-#work .project:first-of-type {
-  width: 29%;
-}
 #work .project img {
   opacity: 0.7;
   width: 100%;
@@ -206,10 +199,6 @@ body {
   color: #FFFFFF;
   margin-bottom: 0.5em;
 }
-#about p {
-  width: 95%;
-  margin-right: 2em;
-}
 #about p span {
   display: inline-block;
   width: 1em;
@@ -237,7 +226,7 @@ body {
   -moz-box-shadow: 7px 7px 7px -5px #000000;
   -webkit-box-shadow: 7px 7px 7px -5px #000000;
   box-shadow: 7px 7px 7px -5px #000000;
-  width: 30%;
+  padding-right: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

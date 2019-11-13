@@ -36,15 +36,18 @@
       </nav>
 
       <div id="password-prompt">
-        <p class="text-center">This content is password protected.<br> Please contact Samantha Fergus for access</p>
+        <p class="text-center">This content is password protected.<br> Please contact Fergie for access</p>
         <form>
           <div class="form-group row">
             <label for="password" class="col-sm-2 col-form-label text-right">Password:</label>
             <div class="col-sm-8">
               <input type="password" id="password" class="form-control">
             </div>
+            <div class="invalid-feedback">
+              Please provide a valid password.
+            </div>
             <div class="col-sm-2">
-              <input type="submit" class="btn btn-primary">
+              <input type="submit" class="btn btn-dark" value="Submit">
             </div>
           </div>
         </form>
@@ -91,21 +94,21 @@
           <div class="green-overlay"></div>
         </div>
 
-        <div class="text-center">
+        <div id="problem" class="text-center">
           <h2>Problem Statement</h2>
           <p class="copy-content">
-            How can we increase human interaction and connection faster when it comes to applying for jobs?
+            How can we enhance human interaction and the speed of connection in the job market?
           </p>
           <h3>Sub Questions</h3>
           <div class="row image-row">
             <p class="col-md-4">
-              How could the platform be represented in a way that will gain interest and attention from like-minded potential users?
+              How do we attract the right audience in both markets?
             </p>
             <p class="col-md-4">
-              How will users navigate through the on boarding process through interactive videos explain the tools and how to use?
+              How do we create a seamless, informative and easy onboarding experience?
             </p>
             <p class="col-md-4">
-              How could the platform be represented a way of showing mutual interest between the job seeker and employer?
+              How can the platform serve the interest of both job seekers and employers?
             </p>
           </div>
         </div>
@@ -114,7 +117,7 @@
         <div class="bold-content">
           <h2>Research & Inspiration</h2>
           <p class="copy-content">
-            I conducted research focused on different application processes, existing tools and resources, and their interactions with their audiences while on those platforms. I also explored inspiration for the UI and navigation.
+            I conducted a competitive analysis focusing on tools and resources; onboarding experiences; and user interactions. I was inspired by the vastly different ways that job sites were structuring UI and navigation.
           </p>
           <div class="row image-row">
             <div class="col-md-4">
@@ -132,20 +135,48 @@
         <div>
           <h2>Journey Map</h2>
           <p class="copy-content">
-            Next, I created journey maps to begin determining screen to screen user interactions. The journey maps also helped me consider the structure and layout that would be necessary for certain screens.
+            In wanting to make sure that our experience stayed on par with the competition, it was imperative that the user journey was strong. The journey map was created to provide structure and a clear path for both sides of the application. 
           </p>
           <div class="image-row">
-            <img src="../images/cambio/cambio_journeymap.jpg" alt="">
+            <img src="../images/cambio/cambio_journeymap.jpg" alt="Cambio journey map">
           </div>
 
           <h2>Wireframes</h2>
-          <p class="copy-content">Paragraph about wireframes</p>
+          <p class="copy-content">
+            Taking into account the user flow I created wireframes to plan users’ experiences from their perspective landing pages to matching a job/candidate. Wireframes were then presented to stakeholders and iterated upon.
+          </p>
+          <div class="carousel">
+            <div id="wireframeCaptions" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#wireframeCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#wireframeCaptions" data-slide-to="1"></li>
+                <li data-target="#wireframeCaptions" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-interval="10000">
+                  <img src="../images/cambio/cambio_landing_wire.png" alt="Cambio landing page wireframe">
+                </div>
+                <div class="carousel-item" data-interval="10000">
+                  <img src="../images/cambio/cambio_employer_wire.png" alt="Cambio employer wireframe">
+                </div>
+                <div class="carousel-item">
+                  <img src="../images/cambio/cambio_job_wire.png" alt="Cambio job seeker wireframe">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#wireframeCaptions" role="button" data-slide="prev">
+                <span>&#10594;</span>
+              </a>
+              <a class="carousel-control-next" href="#wireframeCaptions" role="button" data-slide="next">
+                <span>&#10596;</span>
+              </a>
+            </div>
+          </div>
         </div>
 
         <div class="bold-content">
           <h2>Branding</h2>
           <p class="copy-content">
-            I wanted the branding to be a platform where we brought Cambio to life. The word Cambio in Spanish means “change”. The symbol that I came up with was the infinity symbol. They are constant loops of change and  ideating.
+            The name Cambio has a strong Spanish meaning, “to change”. I wanted to ensure that the logo was just as powerful. I came up with the idea of an infinity symbol. The job market has such a cyclical nature. At one minute a user could be applying for jobs while the next, they are searching for someone to fill a vacant role on their team. The process of change and growth is a continuous cycle.
           </p>
           <div class="row copy-content">
             <img id="styleguide" src="../images/cambio/cambio_styleguide.jpg" alt="Cambio styleguide">
@@ -160,7 +191,7 @@
       <div id="solution">
         <h2>The Solution</h2>
         <p class="copy-content">
-          The final solution for Cambio is a platform where both the job seeker and the employer were allowed to come and make a profile. For the Job seeker the process would be vetted by the key words they used in their profile that would match the key words in the job description.
+          By creating strong user flows that work in parallel to move both job seekers and employers to a match, we were able to create a strong platform for both sets of users.
         </p>
         <div class="image-row">
           <img src="../images/cambio/cambio_mac_landing.png" alt="Cambio landing page on Macbook">
@@ -168,10 +199,11 @@
         </div>
         <img id="icons" src="../images/cambio/cambio_icons.jpg" alt="Cambio 3 icons">
       </div>
-      <div class="bold-content orange-content">
+
+      <div id="landing" class="bold-content orange-content">
         <h2>Landing Page</h2>
         <p class="copy-content">
-          The landing page of Cambio provides general information for the job seeker, employer and the general about us page. Examples of why Cambio is here to help make  connections better, faster, and explains the passion behind why this is being created.   After learning about the site, users can make a profile either as a job seeker or an employer.
+          The landing page provides general information and works to navigate users to the correct side of the application. Job seekers and employers then branch off to their perspective landing pages with more detailed information and begin the process of creating a profile.
         </p>
         <div class="carousel">
           <div id="carouselCaptions" class="carousel slide" data-ride="carousel">
@@ -201,35 +233,33 @@
         </div>
       </div>
 
-
-        <div>
-          <h2>Account Activation</h2>
-          <p class="copy-content">
-            Cambio a Sign up or Sign in approach through email or linkedIn. Each request is reviewed by a team of moderators making sure that your information is accurate and secure. After review we will be sent a thank you email, thanking you for making an account.
-          </p>
-          <div class="row image-row">
-            <img class="col-md-5 offset-md-1" src="../images/cambio/cambio_sign_up.png" alt="Cambio account activation">
-            <img class="col-md-5" src="../images/cambio/cambio_sign_in.png" alt="Cambio account sign in">
-          </div>
+      <div id="activation">
+        <h2>Account Activation</h2>
+        <p class="copy-content">
+          Users have the option to sign up via email or with their LinkedIn credentials. Upon acceptance to Cambio, users are sent a generated welcome email.
+        </p>
+        <div class="row image-row">
+          <img class="col-md-5 offset-md-1" src="../images/cambio/cambio_sign_up.png" alt="Cambio account activation">
+          <img class="col-md-5" src="../images/cambio/cambio_sign_in.png" alt="Cambio account sign in">
         </div>
+      </div>
 
-        <div id="user-profile" class="bold-content">
-          <h2>User Profile</h2>
-          <p class="copy-content">
-            Once users have access, they view an interactive tour including useful tips for making connections. Next, users create a profile which includes a bio job, and status. Cambio integrates directly with linkedIn , allowing users to easily add work to their profile.
-          </p>
-          <div class="image-row">
-            <img src="../images/cambio/cambio_user_proflie.png" alt="Cambio full user profile">
-            <img src="../images/cambio/cambio_profile.jpeg" alt="Cambio profile on Mac Desktop">
-          </div>
+      <div id="user-profile" class="bold-content">
+        <h2>User Profile</h2>
+        <p class="copy-content">
+          On the initial login, users are provided an interactive tour with useful tips. The tour ends by prompting users to create a profile for themselves or their company. Users have the option to integrate with LinkedIn and quickly add work history.
+        </p>
+        <div class="image-row">
+          <img src="../images/cambio/cambio_user_proflie.png" alt="Cambio full user profile">
+          <img src="../images/cambio/cambio_profile.jpeg" alt="Cambio profile on Mac Desktop">
         </div>
+      </div>
 
-        <div id="jobs" class="copy-content">
+      <div id="jobs" class="copy-content">
           <h2>Search Jobs & Swipe</h2>
           <p>
-            After creating a profile, Cambio will direct you to the Job search screen. Here is where you will be allowed to make interactions quickly and seamlessly by using the Swiping interaction. In this interaction you will also be able to read the job description of the employer.
+            Users are taken to the job search screen when they complete their profile and after all other successful logins. Bringing the typically mobile interaction of swiping beyond our mobile web experience to the desktop, users are able to quickly sort through jobs and applications. Both job seekers and employers see the full job description before swiping to make their decisions.
           </p>
-          <p>Before you begin each interaction you will scroll to see the full job description</p>
           <img src="../images/cambio/cambio_jobs.png" alt="Cambio job page">
           <div class="carousel">
             <div id="swipeCaptions" class="carousel slide" data-ride="carousel">
@@ -251,45 +281,41 @@
                     <p>Swipe right means no, it's not the right fit</p>
                   </div>
                 </div>
-                  <div class="carousel-item">
-                    <img src="../images/cambio/cambio_star.jpeg" alt="Cambio job seeker mockup">
-                    <div class="carousel-caption d-none d-md-block">
-                      <p>Star means you're interested but, not ready to start a conversation</p>
-                    </div>
+                <div class="carousel-item">
+                  <img src="../images/cambio/cambio_star.jpeg" alt="Cambio swipe star">
+                  <div class="carousel-caption d-none d-md-block">
+                    <p>Star means you're interested but, not ready to start a conversation</p>
                   </div>
                 </div>
-                <a class="carousel-control-prev" href="#swipeCaptions" role="button" data-slide="prev">
-                  <span>&#10594;</span>
-                </a>
-                <a class="carousel-control-next" href="#swipeCaptions" role="button" data-slide="next">
-                  <span>&#10596;</span>
-                </a>
               </div>
+              <a class="carousel-control-prev" href="#swipeCaptions" role="button" data-slide="prev">
+                <span>&#10594;</span>
+              </a>
+              <a class="carousel-control-next" href="#swipeCaptions" role="button" data-slide="next">
+                <span>&#10596;</span>
+              </a>
             </div>
-
-        </div>
-
-        <div class="bold-content orange-content">
-          <h2>Connection</h2>
-          <p class="copy-content">
-            Users who swipe left for employers  will be notified their dashboard if their connection is accepted they will then be  able to start chatting and connecting.
-          </p>
-        </div>
-
-        <div class="copy-content">
-          <h2>Thoughts & Learning</h2>
-          <p>
-            Working with Cambio as a client was an eye opening experience for me from start to finish. I learned so much about communication methods, emerging technology, and how digital communications is affecting the way we communicate with every interaction.
-          </p>
-          <p>
-            I considered how micro and macro interactions shape the way we connect when it comes to the lack of the physical human connection. I pushed myself to dive deeper into the job searching platforms to see where the barriers were and how we could leverage those barriers to work for use as our livelihood becomes more and more digitally intrenched.
-          </p>
-          <p>
-            I am very excited about the future of job searching and how the interactions between job seekers and employers will continue to be molded by advancing technology. 
-          </p>
-        </div>
+          </div>
       </div>
-      <div id="footer" class="blocked d-flex justify-content-between align-items-center">
+
+      <div class="bold-content orange-content">
+        <h2>Connection</h2>
+        <p class="copy-content">
+          Users who swipe left for employers  will be notified their dashboard if their connection is accepted they will then be  able to start chatting and connecting.
+        </p>
+      </div>
+
+      <div class="copy-content">
+        <h2>Thoughts & Learning</h2>
+        <p>
+          Cambio was the first project that I worked on in which I was given full autonomy to take an idea and create a product. I had to elevate my creative problem solving skills to really understand the vision and build the brand. While building upon my skills as a researcher and quickly understanding the job industry.
+        </p>
+        <p>
+          Working on the web, I discovered the powerful ways in which micro and macro interactions shape the way we interact with humans in person and digitally. I had to understand and account for the fact that in this digital age, we all still seek connection and human interaction. We made it possible to solve these problems digitally while saving time and not forfeiting authenticity.
+        </p>
+      </div>
+    </div>
+    <div id="footer" class="blocked d-flex justify-content-between align-items-center">
           <a href="index.html">
             <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 259.55 390.57"><title>Fergi3ink Logo</title><path d="M158.4,154.68H64.5V78.75h102V1.64H2v355.9H64.5V230.6h93.9ZM48.78,340.93h-31V18.25l31,43.89Z" transform="translate(-2.04 -1.64)"/><path d="M190.07,305.1c7.51-7.42,12.23-19.79,12.23-29.44,0-21.28-15.66-41.82-41.62-41.82-21.88,0-40.55,20.29-40.55,43.8v3.46h31.54v-3.46c0-5.94,3.65-10.64,9-10.64,5.58,0,9.87,4.7,9.87,10.64,0,6.18-3.86,13.86-11.37,13.86h-6.87v33.65h7.3c9.44,0,17.38,4.7,17.38,16.08,0,10.89-7.51,18.31-17.38,18.31-9,0-17-7.42-17-18.31v-4H112.19v4c0,28.46,21,51,47.42,51,29.39,0,48.06-24.5,48.06-49.49A47.45,47.45,0,0,0,190.07,305.1Zm-30.46-45.28a16.78,16.78,0,0,0-15.45,13.12H128.29c2.14-17.57,14.8-30.69,31.32-30.94Zm-.86,125c-20.81-.74-38.19-18.31-39-40.58h15.66c1.08,12.87,10.73,22.52,23.39,23.26Z" transform="translate(-2.04 -1.64)"/><path d="M219.54,99.72V357.91h42V99.72ZM251,345.86H230.12V253.77H251Z" transform="translate(-2.04 -1.64)"/></svg>
           </a>
@@ -315,11 +341,11 @@
                 </a>
               </li>
           </ul>
-      </div>
+    </div>
         
     </div>
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>

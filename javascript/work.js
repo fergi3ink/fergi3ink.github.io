@@ -10,7 +10,7 @@ window.addEventListener('DOMContentLoaded', () => {
     form.classList.add('blocked');
     workContent.classList.remove('blocked');
   }
-
+  
   if (storageValue) {
     grantAccess();
   }
@@ -28,4 +28,3 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   })
 });
-

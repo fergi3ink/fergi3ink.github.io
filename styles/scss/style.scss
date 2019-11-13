@@ -98,13 +98,6 @@ body {
   }
 
   .project {
-    display: inline-block;
-    width: 30%;
-
-    &:first-of-type {
-      width: 29%;
-    }
-
     img {
       opacity: 0.7;
       width: 100%;
@@ -152,8 +145,8 @@ body {
   }
 
   p {
-    width: 95%;
-    margin-right: $space--base;
+    // width: 95%;
+    // margin-right: $space--base;
 
     span {
       display: inline-block;
@@ -190,6 +183,7 @@ body {
     -webkit-box-shadow: $shadow--image;
     box-shadow:         $shadow--image;
 
-    width: 30%;
+    // width: 30%;
+    padding-right: 0;
   }
 }

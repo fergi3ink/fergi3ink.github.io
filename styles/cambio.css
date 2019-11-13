@@ -4,7 +4,7 @@
 
 p,
 li {
-  font-size: 1em;
+  font-size: 1.25em;
   font-family: "Roboto", sans-serif;
 }
 
@@ -57,7 +57,7 @@ nav .links li:nth-child(2) {
 }
 nav .links a {
   color: #113A83;
-  font-size: 1em;
+  font-size: 1.25em;
   font-family: "Roboto", sans-serif;
   margin-right: 0.25em;
 }
@@ -121,10 +121,8 @@ nav,
 
 h1 {
   padding-top: 1em;
+  padding-bottom: 1em;
   font-family: "Roboto", sans-serif;
-}
-h1 + h3 {
-  padding-top: 0;
 }
 
 h2 {
@@ -132,12 +130,9 @@ h2 {
   padding-top: 0.5em;
   margin: 0;
 }
-h2 + h3 {
-  padding-top: 0;
-}
 
 h3 {
-  padding-top: 2em;
+  padding-top: 0;
 }
 
 h2,
@@ -149,7 +144,6 @@ h3 {
 p,
 li {
   color: #707070;
-  font-size: 1.25em;
 }
 
 .copy-content {
@@ -201,12 +195,6 @@ li {
   color: #FFFFFF;
   font-size: 2em;
 }
-.carousel .carousel-control-prev {
-  margin-left: 10em;
-}
-.carousel .carousel-control-next {
-  margin-right: 10em;
-}
 
 .parallax {
   background-image: url("../images/cambio/cambio_card.jpg");
@@ -241,6 +229,12 @@ li {
 .cambio-content #role p {
   padding-bottom: 0;
 }
+.cambio-content #role li {
+  margin-bottom: 0.5em;
+}
+.cambio-content #wireframeCaptions span {
+  color: #177F07;
+}
 .cambio-content #styleguide {
   width: 68%;
   margin-right: 2.5em;
@@ -274,6 +268,18 @@ li {
 .cambio-content #solution #icons {
   width: 25%;
   margin-top: -10em;
+}
+.cambio-content #landing .carousel-control-prev {
+  margin-left: 10em;
+}
+.cambio-content #landing .carousel-control-next {
+  margin-right: 10em;
+}
+.cambio-content #activation img {
+  padding-right: 0;
+}
+.cambio-content #activation img:first-child {
+  margin-right: 2em;
 }
 .cambio-content #user-profile img:first-child {
   vertical-align: top;
@@ -317,6 +323,9 @@ li {
 .cambio-content #jobs .carousel span {
   color: #177F07;
   font-size: 2em;
+}
+.cambio-content #jobs .carousel img {
+  width: 60%;
 }
 
 /*# sourceMappingURL=cambio.css.map */

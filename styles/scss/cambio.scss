@@ -43,25 +43,18 @@ nav,
 
 h1 {
   padding-top: $space--medium;
+  padding-bottom: $space--medium;
   font-family: $font--main;
-
-  & + h3 {
-    padding-top: 0;
-  }
 }
 
 h2 {
   padding-bottom: $space--small;
   padding-top: $space--small;
   margin: 0;
-
-  & + h3 {
-    padding-top: 0;
-  }
 }
 
 h3 {
-  padding-top: $space--base;
+  padding-top: 0;
 }
 
 h2,
@@ -73,7 +66,6 @@ h3 {
 p,
 li {
   color: $color--gray;
-  font-size: 1.25em;
 }
 
 .copy-content {
@@ -129,14 +121,6 @@ li {
     color: $color--white;
     font-size: 2em;
   }
-
-  .carousel-control-prev {
-    margin-left: 10em;
-  }
-
-  .carousel-control-next {
-    margin-right: 10em;
-  }
 }
 
 .parallax {
@@ -180,6 +164,20 @@ li {
   #role {
     p {
       padding-bottom: 0;
+    }
+
+    li {
+      margin-bottom: $space--small;
+    }
+  }
+
+  #problem h3 {
+
+  }
+
+  #wireframeCaptions {
+    span {
+      color: $cambio-forest-green;
     }
   }
 
@@ -226,6 +224,24 @@ li {
     #icons {
       width: 25%;
       margin-top: -10em;
+    }
+  }
+
+  #landing {
+    .carousel-control-prev {
+      margin-left: 10em;
+    }
+  
+    .carousel-control-next {
+      margin-right: 10em;
+    }
+  }
+
+  #activation img {
+    padding-right: 0;
+    
+    &:first-child {
+      margin-right: $space--base;
     }
   }
 
@@ -283,6 +299,10 @@ li {
       span {
         color: $cambio-forest-green;
         font-size: 2em;
+      }
+
+      img {
+        width: 60%;
       }
     }
   }
