@@ -75,6 +75,14 @@ h1 {
   }
 }
 
+#protoype {
+  width: 100%;
+  
+  @media (min-width: $breakpoint--medium) {
+    margin-top: -5em;
+  }
+}
+
 #role {
   p {
     padding-bottom: 0;
@@ -92,12 +100,26 @@ h1 {
 }
 
 #styleguide {
-  width: 68%;
-  margin-right: 2.5em;
+  // width: 100%;
 
   -moz-box-shadow:    $shadow--image;
   -webkit-box-shadow: $shadow--image;
   box-shadow:         $shadow--image;
+  
+  
+}
+
+#branding {
+  .flex-md-column img {
+    -moz-box-shadow:    $shadow--image;
+    -webkit-box-shadow: $shadow--image;
+    box-shadow:         $shadow--image;
+    width: 40%;
+
+    @media (min-width: $breakpoint--medium) {
+      width: 100%;
+    }
+  }
 }
 
 .logo {
@@ -114,26 +136,38 @@ h1 {
 
 #solution {
   .image-row img {
-    width: 80%;
-    
+    width: 100%;
+    margin-top: -25%;
+
     -moz-box-shadow:    none;
     -webkit-box-shadow: none;
     box-shadow:         none;
 
-    &:first-child {
-      margin-top: -20em;
-      margin-left: -8em;
-    }
+    @media (min-width: $breakpoint--medium) {
+      width: 80%;
 
-    &:last-child {
-      margin-left: -28em;
-      margin-right: -10em;
+      &:first-child {
+        margin-top: -20em;
+        margin-left: -8em;
+      }
+  
+      &:last-child {
+        margin-top: 0;
+        margin-left: -28em;
+        margin-right: -10em;
+      }
     }
   }
 
   #icons {
-    width: 25%;
-    margin-top: -10em;
+    width: 50%;
+    margin-top: -10%;
+    padding-bottom: $space--base;
+    
+    @media (min-width: $breakpoint--medium) {
+      width: 25%;
+      margin-top: -10em;
+    }
   }
 }
 
