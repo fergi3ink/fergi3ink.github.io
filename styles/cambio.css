@@ -46,6 +46,7 @@ nav {
   color: #113A83;
   padding: 0 2em;
   position: fixed;
+  top: 0;
   width: 100%;
   z-index: 5;
 }
@@ -84,13 +85,13 @@ nav .links a {
   margin-right: 0;
 }
 
-nav {
+#nav {
   -moz-box-shadow: 0px 3px 7px -5px #000000;
   -webkit-box-shadow: 0px 3px 7px -5px #000000;
   box-shadow: 0px 3px 7px -5px #000000;
 }
 
-nav,
+#nav,
 #footer {
   background-color: #FFFFFF;
   border: none;
@@ -119,12 +120,6 @@ nav,
   margin-top: -5em;
 }
 
-h1 {
-  padding-top: 1em;
-  padding-bottom: 1em;
-  font-family: "Roboto", sans-serif;
-}
-
 h2 {
   padding-bottom: 0.5em;
   padding-top: 0.5em;
@@ -146,12 +141,33 @@ li {
   color: #707070;
 }
 
+.content ul {
+  list-style-type: none;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .copy-content {
   text-align: center;
   padding-bottom: 2em;
   margin-right: auto;
   margin-left: auto;
   max-width: 770px;
+}
+
+.parallax {
+  height: 70vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-family: "Roboto", sans-serif;
 }
 
 .bold-content {
@@ -198,11 +214,6 @@ li {
 
 .parallax {
   background-image: url("../images/cambio/cambio_card.jpg");
-  height: 70vh;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .green-overlay {
@@ -211,77 +222,74 @@ li {
   height: 100%;
 }
 
-.cambio-content ul,
-.ink-well-content ul {
-  list-style-type: none;
-  text-align: left;
-  padding: 0;
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
-}
-.cambio-content #intro h2,
-.ink-well-content #intro h2 {
+#intro h2 {
   color: #FFFFFF;
   padding-top: 0;
 }
 
-.cambio-content #role p {
+#role p {
   padding-bottom: 0;
 }
-.cambio-content #role li {
+#role li {
   margin-bottom: 0.5em;
 }
-.cambio-content #wireframeCaptions span {
+
+#wireframeCaptions span {
   color: #177F07;
 }
-.cambio-content #styleguide {
+
+#styleguide {
   width: 68%;
   margin-right: 2.5em;
   -moz-box-shadow: 7px 7px 7px -5px #000000;
   -webkit-box-shadow: 7px 7px 7px -5px #000000;
   box-shadow: 7px 7px 7px -5px #000000;
 }
-.cambio-content .logo {
+
+.logo {
   width: 25%;
 }
-.cambio-content .logo img {
+.logo img {
   width: 100%;
   -moz-box-shadow: 7px 7px 7px -5px #000000;
   -webkit-box-shadow: 7px 7px 7px -5px #000000;
   box-shadow: 7px 7px 7px -5px #000000;
 }
-.cambio-content #solution .image-row img {
+
+#solution .image-row img {
   width: 80%;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-.cambio-content #solution .image-row img:first-child {
+#solution .image-row img:first-child {
   margin-top: -20em;
   margin-left: -8em;
 }
-.cambio-content #solution .image-row img:last-child {
+#solution .image-row img:last-child {
   margin-left: -28em;
   margin-right: -10em;
 }
-.cambio-content #solution #icons {
+#solution #icons {
   width: 25%;
   margin-top: -10em;
 }
-.cambio-content #landing .carousel-control-prev {
+
+#landing .carousel-control-prev {
   margin-left: 10em;
 }
-.cambio-content #landing .carousel-control-next {
+#landing .carousel-control-next {
   margin-right: 10em;
 }
-.cambio-content #activation img {
+
+#activation img {
   padding-right: 0;
 }
-.cambio-content #activation img:first-child {
+#activation img:first-child {
   margin-right: 2em;
 }
-.cambio-content #user-profile img:first-child {
+
+#user-profile img:first-child {
   vertical-align: top;
   margin-left: -10em;
   margin-right: -7em;
@@ -291,40 +299,41 @@ li {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-.cambio-content #user-profile img:last-child {
+#user-profile img:last-child {
   width: 55%;
 }
-.cambio-content #jobs img {
+
+#jobs img {
   width: 30%;
   -moz-box-shadow: 7px 7px 7px -5px #000000;
   -webkit-box-shadow: 7px 7px 7px -5px #000000;
   box-shadow: 7px 7px 7px -5px #000000;
 }
-.cambio-content #jobs .carousel {
+#jobs .carousel {
   margin-top: 2em;
   padding-bottom: 0;
 }
-.cambio-content #jobs .carousel .carousel-indicators {
+#jobs .carousel .carousel-indicators {
   margin-bottom: 0;
 }
-.cambio-content #jobs .carousel .carousel-item {
+#jobs .carousel .carousel-item {
   padding-bottom: 6em;
 }
-.cambio-content #jobs .carousel .carousel-caption {
+#jobs .carousel .carousel-caption {
   z-index: 0;
 }
-.cambio-content #jobs .carousel .carousel-item:last-child .carousel-caption {
+#jobs .carousel .carousel-item:last-child .carousel-caption {
   bottom: -1em;
 }
-.cambio-content #jobs .carousel .carousel-control-next,
-.cambio-content #jobs .carousel .carousel-control-prev {
+#jobs .carousel .carousel-control-next,
+#jobs .carousel .carousel-control-prev {
   bottom: 7em;
 }
-.cambio-content #jobs .carousel span {
+#jobs .carousel span {
   color: #177F07;
   font-size: 2em;
 }
-.cambio-content #jobs .carousel img {
+#jobs .carousel img {
   width: 60%;
 }
 

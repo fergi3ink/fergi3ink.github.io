@@ -100,12 +100,16 @@ body {
   .project {
     img {
       opacity: 0.7;
+      height: 65vh;
       width: 100%;
 
-      background-color: $color--one;
       -moz-box-shadow:    7px 7px 12px -6px $color--black, -7px 7px 12px -6px $color--black;
       -webkit-box-shadow: 7px 7px 12px -6px $color--black, -7px 7px 12px -6px $color--black;
       box-shadow:       7px 7px 12px -6px $color--black, -7px 7px 12px -6px $color--black;
+
+      &[alt="InkWell logo"] {
+        border-radius:50%;
+      }
     }
   
     a img:hover {
@@ -122,13 +126,10 @@ body {
       text-decoration: underline;
     }
 
-    &:first-child {
-      p a:hover {
-        span::before {
-          content: "\3"; 
-        }
+    p a:hover {
+      span::before {
+        content: "\3"; 
       }
-    
     }
   }
 }

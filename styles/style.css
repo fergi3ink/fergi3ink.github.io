@@ -46,6 +46,7 @@ nav {
   color: #113A83;
   padding: 0 2em;
   position: fixed;
+  top: 0;
   width: 100%;
   z-index: 5;
 }
@@ -168,11 +169,14 @@ body {
 }
 #work .project img {
   opacity: 0.7;
+  height: 65vh;
   width: 100%;
-  background-color: #F5D547;
   -moz-box-shadow: 7px 7px 12px -6px #000000, -7px 7px 12px -6px #000000;
   -webkit-box-shadow: 7px 7px 12px -6px #000000, -7px 7px 12px -6px #000000;
   box-shadow: 7px 7px 12px -6px #000000, -7px 7px 12px -6px #000000;
+}
+#work .project img[alt="InkWell logo"] {
+  border-radius: 50%;
 }
 #work .project a img:hover {
   opacity: 1;
@@ -185,7 +189,7 @@ body {
   color: #113A83;
   text-decoration: underline;
 }
-#work .project:first-child p a:hover span::before {
+#work .project p a:hover span::before {
   content: "\3";
 }
 
