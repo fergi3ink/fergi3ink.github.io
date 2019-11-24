@@ -208,7 +208,12 @@ ul {
   padding-top: 4.25em;
   background-image: url("../images/ink-well/logo.png");
   background-position: center;
-  background-size: 30%;
+  background-size: 60%;
+}
+@media (min-width: 768px) {
+  #banner .logo {
+    background-size: 30%;
+  }
 }
 
 #intro {

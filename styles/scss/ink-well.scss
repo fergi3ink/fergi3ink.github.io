@@ -61,7 +61,11 @@ ul {
 
     background-image: url("../images/ink-well/logo.png");
     background-position: center;
-    background-size: 30%;
+    background-size: 60%;
+
+    @media (min-width: $breakpoint--medium) {
+      background-size: 30%;
+    }
   }
 }
 

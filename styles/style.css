@@ -212,34 +212,18 @@ body {
   color: #FFFFFF;
   margin-bottom: 0.5em;
 }
-#about p span {
-  display: inline-block;
-  width: 1em;
-}
-#about p:first-child,
-#about span {
+#about .yellow-text {
   font-size: 1.5em;
   color: #F5D547;
 }
-#about a {
-  color: #F5D547;
-}
-#about p:nth-child(2) {
-  margin-bottom: 0;
-}
+#about a,
 #about ul {
   color: #F5D547;
-  margin-bottom: 0;
-  margin-left: 1.5em;
-}
-#about ul li:nth-child(2) {
-  padding: 0 2em;
 }
 #about img {
   -moz-box-shadow: 7px 7px 7px -5px #000000;
   -webkit-box-shadow: 7px 7px 7px -5px #000000;
   box-shadow: 7px 7px 7px -5px #000000;
-  padding-right: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
