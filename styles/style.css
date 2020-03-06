@@ -53,7 +53,7 @@ nav {
 nav .links ul {
   list-style: none;
 }
-nav .links li:nth-child(2) {
+nav .links li:first-child {
   margin: 0 1em;
 }
 nav .links a {
@@ -90,7 +90,7 @@ body {
 }
 
 #home {
-  background: #ABABAB url("https://images.unsplash.com/photo-1502252430442-aac78f397426?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80") no-repeat;
+  background: #ABABAB url("https://images.unsplash.com/photo-1541542509806-6371b7b0a265?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=788&q=80") no-repeat;
   background-size: cover;
 }
 #home .image-gradient {
@@ -190,17 +190,6 @@ body {
 #work .project a img:hover {
   opacity: 1;
 }
-#work .project p {
-  font-size: 0.75em;
-  margin-top: 0.5em;
-}
-#work .project a {
-  color: #113A83;
-  text-decoration: underline;
-}
-#work .project p a:hover span::before {
-  content: "\3";
-}
 
 #about {
   color: #FFFFFF;
@@ -221,9 +210,12 @@ body {
   color: #F5D547;
 }
 #about img {
-  -moz-box-shadow: 7px 7px 7px -5px #000000;
-  -webkit-box-shadow: 7px 7px 7px -5px #000000;
-  box-shadow: 7px 7px 7px -5px #000000;
+  -moz-box-shadow: 0 0 7px #000000;
+  -webkit-box-shadow: 0 0 7px #000000;
+  box-shadow: 0 0 7px #000000;
+}
+#about .col-11 {
+  padding: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

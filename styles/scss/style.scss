@@ -5,7 +5,7 @@ body {
 }
 
 #home {
-  background: $color--two url("https://images.unsplash.com/photo-1502252430442-aac78f397426?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80") no-repeat;
+  background: $color--two url("https://images.unsplash.com/photo-1541542509806-6371b7b0a265?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=788&q=80") no-repeat;
   background-size: cover;
 
   .image-gradient {
@@ -118,22 +118,6 @@ body {
     a img:hover {
       opacity: 1;
     }
-
-    p {
-      font-size: $font-size--medium;
-      margin-top: $space--small;
-    }
-
-    a {
-      color: $color--three;
-      text-decoration: underline;
-    }
-
-    p a:hover {
-      span::before {
-        content: "\3"; 
-      }
-    }
   }
 }
 
@@ -162,5 +146,9 @@ body {
     -moz-box-shadow:    $shadow--image;
     -webkit-box-shadow: $shadow--image;
     box-shadow:         $shadow--image;
+  }
+
+  .col-11 {
+    padding: 0;
   }
 }

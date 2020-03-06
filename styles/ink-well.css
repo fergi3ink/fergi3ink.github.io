@@ -53,7 +53,7 @@ nav {
 nav .links ul {
   list-style: none;
 }
-nav .links li:nth-child(2) {
+nav .links li:first-child {
   margin: 0 1em;
 }
 nav .links a {
@@ -205,9 +205,8 @@ ul {
   height: 90vh;
 }
 #banner .logo {
-  padding-top: 4.25em;
-  background-image: url("../images/ink-well/logo.png");
-  background-position: center;
+  background-image: url("../images/ink-well/final-logo.png");
+  background-position: left 2em top 6.25em;
   background-size: 60%;
 }
 @media (min-width: 768px) {
