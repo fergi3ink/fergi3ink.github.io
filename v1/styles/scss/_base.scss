@@ -1,0 +1,127 @@
+$font--heading: 'Open Sans', sans-serif;
+$font--main: 'Roboto', sans-serif;
+
+$font-size--xlarge:  3.75em;
+$font-size--large:   3em;
+$font-size--base:    1.25em;
+$font-size--medium:  0.75em;
+$font-size--small:   0.5em;
+$font-size--xsmall:  0.25em; 
+
+$color--one:    #F5D547;
+$color--two:    #ABABAB;
+$color--three:  #113A83;
+$color--four:   #B4B4BA;
+$color--five:   #F3FBF5;
+$color--gray:   #707070;
+$color--black:  #000000;
+$color--white:  #FFFFFF;
+
+$space--base:   2em;
+$space--medium: 1em;
+$space--small:  0.5em;
+$space--xsmall: 0.25em;
+
+$breakpoint--large: 992px;
+$breakpoint--medium: 768px;
+
+$shadow--image: 0 0 7px $color--black; 
+
+.width-75 {
+  width: 75%;
+}
+
+p, 
+li {
+  font-size: $font-size--base;
+  font-family: $font--main;
+}
+
+a, 
+a:link {
+  text-decoration: none;
+
+  &:hover {
+    font-weight: 700;
+  }
+}
+
+h1 {
+  font-weight: 700;
+  
+  @media (min-width: $breakpoint--medium) {
+    font-size: $font-size--xlarge;
+  }
+}
+
+h2 {
+  color: $color--three;
+  font-size: $font-size--large;
+  font-weight: 700; 
+}
+
+svg.logo {
+  background-color: $color--three;
+  fill: $color--white;
+  
+  padding: $space--small;
+  height: 4.25em;
+  width: 3.5em;
+}
+
+nav {
+  background-color: $color--one;
+  border-bottom: $font-size--small solid $color--three;
+  color: $color--three;
+
+  padding: 0 $space--base;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+
+  .links {
+    ul {
+      list-style: none;
+    }
+
+    li:first-child {
+      margin: 0 $space--medium
+    }
+
+    a {
+      color: $color--three;
+      font-size: $font-size--base;
+      font-family: $font--main;
+
+      margin-right: $space--xsmall;
+    }
+  }
+}
+
+#footer {
+  background-color: $color--one;
+  border-top: $font-size--small solid $color--three;
+  color: $color--three;
+
+  border-bottom: none;
+  padding: 0 $space--base;  
+}
+
+.social {
+  list-style-type: none;
+ 
+  svg {
+    color: $color--three;
+    width: 1.5em;
+  }
+  
+  li {
+    margin-right: $space--medium;
+  }
+
+  li:last-child {
+    margin-right: 0;
+  }
+  
+}
