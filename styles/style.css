@@ -31,6 +31,7 @@ svg.logo {
   fill: #FFFFFF;
   font-size: 3.75em;
   padding: 0.5em;
+  width: 2em;
 }
 
 nav {
@@ -77,8 +78,8 @@ nav .links a {
 }
 #intro .welcome-content {
   color: #FFFFFF;
-  padding-top: 6em;
-  padding-bottom: 10em;
+  padding-top: 3em;
+  padding-bottom: 6em;
 }
 #intro .image-gradient {
   background-image: linear-gradient(rgba(180, 180, 186, 0.8), rgba(17, 58, 131, 0.5));
@@ -89,13 +90,13 @@ nav .links a {
 }
 
 #work {
-  padding: 5em 20em;
+  padding: 5em 10em;
 }
 #work .image-container img {
   width: 100%;
 }
 #work .text-container {
-  padding: 2em;
+  padding: 0 2em;
 }
 
 #about {
