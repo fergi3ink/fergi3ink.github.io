@@ -72,43 +72,4 @@ nav .links a {
   margin-right: 0;
 }
 
-#intro {
-  background: #FFFFFF url("../images/banner.jpg") no-repeat;
-  background-size: cover;
-}
-#intro .welcome-content {
-  color: #FFFFFF;
-  padding-top: 3em;
-  padding-bottom: 6em;
-}
-#intro .image-gradient {
-  background-image: linear-gradient(rgba(180, 180, 186, 0.8), rgba(17, 58, 131, 0.5));
-  height: 100%;
-  width: 100%;
-  position: relative;
-  z-index: 1;
-}
-
-#work {
-  padding: 5em 10em;
-}
-#work .image-container img {
-  width: 100%;
-}
-#work .text-container {
-  padding: 0 2em;
-}
-
-#about {
-  padding: 2em;
-}
-#about svg.logo {
-  font-size: 2em;
-  fill: #000000;
-  padding-top: 0;
-}
-#about img {
-  width: 50%;
-}
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=ink-well.css.map */
